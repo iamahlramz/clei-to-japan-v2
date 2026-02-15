@@ -1,0 +1,892 @@
+/* ========================================
+   Japan Family Adventure — Itinerary
+   Mobile-first, clean, readable
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F8F6F2;
+  --surface: #FFFFFF;
+  --text: #1E1B18;
+  --text-secondary: #6B6560;
+  --text-muted: #757068;
+  --border: #E8E5E0;
+  --border-light: #F3F1ED;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+
+  /* Semantic Color Tokens */
+  --transport-bg: #F0F4FF;
+  --transport-border: #D9E2FF;
+  --transport-text: #3730A3;
+  --transport-title: #4338CA;
+  --food-accent: #EA580C;
+  --food-bg: #FFF9F5;
+  --food-border: #FDE8D8;
+  --food-name: #9A3412;
+  --food-vibe-text: #B45309;
+  --food-vibe-bg: #FEF3C7;
+  --tips-bg: #FEFCE8;
+  --tips-border: #FDE68A;
+  --tips-label: #854D0E;
+  --tips-text: #713F12;
+  --tips-bullet: #B45309;
+  --sapporo-accent: #0891B2;
+  --focus-ring: #4338CA;
+  --radius-pill: 99px;
+
+  /* Spacing Tokens */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* ========================================
+   Hero Header
+   ======================================== */
+
+.hero {
+  background: linear-gradient(145deg, #0F172A, #1E293B, #334155);
+  padding: max(40px, calc(env(safe-area-inset-top) + 20px)) 20px 32px;
+  color: white;
+}
+
+.hero-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.hero-date {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.hero-tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-tag {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ========================================
+   Main Content Area
+   ======================================== */
+
+.main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 16px 16px 60px;
+}
+
+/* ========================================
+   Toggle / Collapsible Sections
+   ======================================== */
+
+.toggle-section {
+  margin-bottom: 16px;
+}
+
+.toggle-header {
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  transition: border-radius 0.15s;
+  box-shadow: var(--shadow-sm);
+}
+
+.toggle-header:active {
+  background: #FAFAF8;
+}
+
+.day-tab:focus-visible,
+.toggle-header:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.toggle-header.toggle-open {
+  border-radius: var(--radius) var(--radius) 0 0;
+  border-bottom-color: transparent;
+}
+
+.toggle-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.toggle-title {
+  text-align: left;
+}
+
+.toggle-subtitle {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.toggle-arrow {
+  color: var(--text-muted);
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.toggle-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.toggle-content-wrapper {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+}
+
+.toggle-content {
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ========================================
+   Checklist (Pre-departure, Arrival)
+   ======================================== */
+
+.checklist {
+  padding: 16px 20px;
+}
+
+.checklist-item {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.checklist-item:last-child {
+  margin-bottom: 0;
+}
+
+.checklist-label {
+  font-weight: 700;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.checklist-text {
+  color: var(--text);
+}
+
+/* ========================================
+   Flights List
+   ======================================== */
+
+.flights-list {
+  padding: 8px 20px 14px;
+}
+
+.flight-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border-light);
+  flex-wrap: wrap;
+}
+
+.flight-row:last-child {
+  border-bottom: none;
+}
+
+.flight-date {
+  font-weight: 700;
+  color: var(--text-muted);
+  font-size: 12px;
+  min-width: 52px;
+}
+
+.flight-route {
+  flex: 1;
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.flight-code {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.flight-time {
+  font-weight: 600;
+  font-size: 13px;
+  text-align: right;
+  min-width: 130px;
+}
+
+/* ========================================
+   Day Navigation
+   ======================================== */
+
+.day-nav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  padding: 8px 0 4px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s ease;
+}
+
+.day-nav-wrapper.scrolled {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.day-nav {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.day-nav::-webkit-scrollbar {
+  height: 3px;
+}
+
+.day-nav::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: var(--radius-pill);
+}
+
+.day-tab {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  background: var(--surface);
+  cursor: pointer;
+  min-width: 68px;
+  min-height: 48px;
+  font-family: inherit;
+  transition: all 0.15s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.day-tab:active {
+  transform: scale(0.97);
+}
+
+.day-tab-active {
+  border-color: var(--tab-accent);
+  background: var(--tab-bg);
+}
+
+.day-tab-emoji {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.day-tab-day {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.day-tab-active .day-tab-day {
+  color: var(--tab-accent);
+}
+
+.day-tab-date {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.day-tab-active .day-tab-date {
+  color: var(--tab-accent);
+}
+
+.day-progress {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 4px 0 8px;
+}
+
+/* ========================================
+   Day Card
+   ======================================== */
+
+.day-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--card-border, var(--border));
+  background: var(--surface);
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-md);
+  animation: fadeSlideIn 0.3s ease-out;
+}
+
+.day-card-header {
+  padding: 24px 20px;
+  color: white;
+}
+
+.day-card-date {
+  font-size: 12px;
+  opacity: 0.85;
+  font-weight: 500;
+}
+
+.day-card-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 4px;
+  line-height: 1.2;
+}
+
+.day-card-badge {
+  display: inline-block;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ========================================
+   Transport Guide
+   ======================================== */
+
+.transport-guide {
+  padding: 16px 20px;
+  background: var(--transport-bg);
+  border-bottom: 1px solid var(--transport-border);
+}
+
+.transport-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.transport-icon {
+  font-size: 18px;
+}
+
+.transport-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--transport-title);
+}
+
+.transport-steps {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.transport-step {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--transport-text);
+  margin-bottom: 6px;
+  padding-left: 4px;
+}
+
+.transport-step:last-child {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   Timeline
+   ======================================== */
+
+.day-card-timeline {
+  padding: 12px 20px 16px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  position: relative;
+}
+
+.timeline-item-border {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.timeline-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.timeline-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.timeline-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 1px;
+}
+
+.timeline-details {
+  flex: 1;
+}
+
+.timeline-time {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.timeline-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* ========================================
+   Food Cards
+   ======================================== */
+
+.timeline-food {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.timeline-food-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--food-accent);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.timeline-food-label::before {
+  content: "🍽️";
+}
+
+.food-card {
+  padding: 12px 16px;
+  background: var(--food-bg);
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  border: 1px solid var(--food-border);
+}
+
+.food-card:last-child {
+  margin-bottom: 0;
+}
+
+.food-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.food-card-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--food-name);
+}
+
+.food-card-vibe {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--food-vibe-text);
+  background: var(--food-vibe-bg);
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.food-card-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+.food-card-pick {
+  border-left: 3px solid var(--food-accent);
+}
+
+.food-pick-badge {
+  display: inline-block;
+  background: var(--food-accent);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  margin-right: 8px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ========================================
+   Tips Banner
+   ======================================== */
+
+.tips-banner {
+  padding: 16px 20px;
+  background: var(--tips-bg);
+  border-top: 1px solid var(--tips-border);
+}
+
+.tips-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.tips-icon {
+  font-size: 16px;
+}
+
+.tips-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--tips-label);
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tips-item {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--tips-text);
+  margin-bottom: 4px;
+  padding-left: 14px;
+  position: relative;
+}
+
+.tips-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--tips-bullet);
+  font-weight: bold;
+}
+
+.tips-item:last-child {
+  margin-bottom: 0;
+}
+
+.next-day-prompt {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--bg);
+  border: none;
+  border-top: 1px solid var(--border-light);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.15s ease;
+}
+
+.next-day-prompt:hover {
+  color: var(--text);
+}
+
+.next-day-prompt:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: -2px;
+}
+
+/* ========================================
+   USJ Note
+   ======================================== */
+
+.usj-note {
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* ========================================
+   Sapporo Suggestions
+   ======================================== */
+
+.sapporo-grid {
+  padding: 8px 20px 16px;
+}
+
+.sapporo-category {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sapporo-category:last-child {
+  border-bottom: none;
+}
+
+.sapporo-cat-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--sapporo-accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.sapporo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sapporo-item {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 4px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.sapporo-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--sapporo-accent);
+  font-weight: bold;
+}
+
+.day-card-empty {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.day-card-empty-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.day-card-empty-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.day-card-empty-hint {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.site-footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 24px;
+  padding: 16px 0 max(16px, calc(env(safe-area-inset-bottom) + 8px));
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================================
+   Motion Preferences
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========================================
+   Responsive — Tablet+
+   ======================================== */
+
+@media (min-width: 640px) {
+  .hero {
+    padding: 48px 24px 36px;
+  }
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .main {
+    padding: 20px 20px 60px;
+  }
+
+  .day-tab {
+    padding: 12px 18px;
+    min-width: 80px;
+  }
+
+  .day-card-header {
+    padding: 28px 24px;
+  }
+
+  .day-card-title {
+    font-size: 26px;
+  }
+
+  .transport-guide,
+  .day-card-timeline,
+  .tips-banner,
+  .checklist,
+  .sapporo-grid,
+  .flights-list {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+
+@media print {
+  .day-nav-wrapper {
+    position: static;
+  }
+
+  .toggle-content-wrapper {
+    max-height: none !important;
+    opacity: 1 !important;
+  }
+
+  .hero {
+    background: #1E293B !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .day-card-header {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .app {
+    font-size: 11px;
+  }
+}
