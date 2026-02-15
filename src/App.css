@@ -124,6 +124,86 @@ body {
 }
 
 /* ========================================
+   Page Navigation Tabs
+   ======================================== */
+
+.page-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 0 8px;
+}
+
+.page-nav-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 12px 8px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+  min-width: 56px;
+}
+
+.page-nav-tab:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: -2px;
+}
+
+.page-nav-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.page-nav-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.page-nav-tab-active {
+  border-bottom-color: var(--text);
+}
+
+.page-nav-tab-active .page-nav-label {
+  color: var(--text);
+}
+
+/* ========================================
+   Page Titles (for standalone pages)
+   ======================================== */
+
+.page-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.page-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.flights-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ========================================
    Main Content Area
    ======================================== */
 
@@ -301,9 +381,6 @@ body {
    ======================================== */
 
 .day-nav-wrapper {
-  position: sticky;
-  top: 0;
-  z-index: 10;
   background: var(--bg);
   padding: 8px 0 4px;
   margin-bottom: 12px;
@@ -831,6 +908,21 @@ body {
 
   .hero-title {
     font-size: 34px;
+  }
+
+  .page-nav {
+    gap: 4px;
+  }
+
+  .page-nav-tab {
+    flex-direction: row;
+    gap: 6px;
+    padding: 12px 20px 10px;
+    min-width: auto;
+  }
+
+  .page-nav-label {
+    font-size: 13px;
   }
 
   .main {

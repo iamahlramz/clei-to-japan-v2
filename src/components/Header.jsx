@@ -10,7 +10,7 @@ export default function Header() {
           Home base: Hanazono-cho, Osaka (2 stops from Namba!)
         </p>
         <div className="hero-tags">
-          {["🌸 Cherry Blossoms", "🛍️ Shopping Spree", "❄️ Snow in Sapporo", "👶 Fun for the Little One"].map((tag) => (
+          {["🌸 Cherry Blossoms", "🛍️ Shopping Spree", "❄️ Snow in Sapporo"].map((tag) => (
             <span key={tag} className="hero-tag">{tag}</span>
           ))}
         </div>
