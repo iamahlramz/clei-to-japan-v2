@@ -6,7 +6,7 @@ export const SECTIONS = [
     subtitle: "Get these done before March 27",
     content: [
       { label: "Flights", text: "Confirm all 5 flight bookings. Print or save e-tickets offline. Check Peach MM105 baggage allowance (budget airline — extra bags cost extra)." },
-      { label: "Passport", text: "Ensure all 6 passports are valid for at least 6 months. Philippines passport holders get visa-free entry to Japan for up to 30 days." },
+      { label: "Passport & Visa", text: "Ensure all 6 passports are valid for at least 6 months with 2 blank pages. Filipino citizens need a tourist visa for Japan — apply at the Japan Visa Application Center (VFS Global) in Manila, Cebu, or Davao. Processing takes ~1 week. Bring: passport, photo, birth certificate, ITR or bank statements, flight booking, and hotel/Airbnb confirmation. Apply early!" },
       { label: "eSIM / Pocket WiFi", text: "Pre-order an eSIM (Ubigi, Airalo, or Mobal) or reserve a pocket WiFi for pickup at Kansai Airport. Coverage needed Mar 27–Apr 3." },
       { label: "ICOCA Card", text: "Can be bought at Kansai Airport upon arrival (¥2,000 = ¥500 deposit + ¥1,500 credit). Works on all trains, subways, buses, and convenience stores in Osaka AND Sapporo. If physical cards are unavailable (occasional chip shortages), use the digital ICOCA on iPhone (Apple Wallet) or buy a digital Suica/PASMO card instead." },
       { label: "Apps to Download", text: "Google Maps (works great for Japan transit), Navitime or Japan Travel (route planners), Google Translate (download Japanese offline pack), Tabelog or Google Maps for restaurant reviews." },
