@@ -4,7 +4,13 @@ export default function FoodCard({ food }) {
       <div className="food-card-header">
         <span className="food-card-name">
           {food.pick && <span className="food-pick-badge">Our pick</span>}
-          {food.name}
+          {food.mapLink ? (
+            <a href={food.mapLink} target="_blank" rel="noopener noreferrer" className="food-card-link">
+              {food.name} <span className="food-map-icon">📍</span>
+            </a>
+          ) : (
+            food.name
+          )}
         </span>
         <span className="food-card-vibe">{food.vibe}</span>
       </div>

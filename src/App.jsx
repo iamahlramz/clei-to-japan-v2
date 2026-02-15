@@ -125,6 +125,15 @@ export default function App() {
                     <div key={i} className="checklist-item">
                       <span className="checklist-label">{item.label}</span>
                       <span className="checklist-text">{item.text}</span>
+                      {item.links && (
+                        <span className="checklist-links">
+                          {item.links.map((link, li) => (
+                            <a key={li} href={link.url} target="_blank" rel="noopener noreferrer" className="checklist-link">
+                              {link.text} ↗
+                            </a>
+                          ))}
+                        </span>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -167,6 +176,15 @@ export default function App() {
                     <div key={i} className="checklist-item">
                       <span className="checklist-label">{item.label}</span>
                       <span className="checklist-text">{item.text}</span>
+                      {item.links && (
+                        <span className="checklist-links">
+                          {item.links.map((link, li) => (
+                            <a key={li} href={link.url} target="_blank" rel="noopener noreferrer" className="checklist-link">
+                              {link.text} ↗
+                            </a>
+                          ))}
+                        </span>
+                      )}
                     </div>
                   ))}
                 </div>

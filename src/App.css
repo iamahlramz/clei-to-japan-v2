@@ -329,6 +329,30 @@ body {
   color: var(--text);
 }
 
+.checklist-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.checklist-link {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563EB;
+  text-decoration: none;
+  background: #EFF6FF;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.checklist-link:hover {
+  background: #DBEAFE;
+  color: #1D4ED8;
+}
+
 /* ========================================
    Flights List
    ======================================== */
@@ -684,6 +708,24 @@ body {
   color: var(--text-secondary);
   line-height: 1.6;
   margin-top: 6px;
+}
+
+.food-card-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--text-muted);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.food-card-link:hover {
+  color: #2563EB;
+  border-color: #2563EB;
+}
+
+.food-map-icon {
+  font-size: 12px;
+  margin-left: 2px;
+  opacity: 0.6;
 }
 
 .food-card-pick {
