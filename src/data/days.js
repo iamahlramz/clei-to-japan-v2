@@ -221,7 +221,7 @@ export const DAYS = [
     ],
     tips: [
       "Peach = budget airline. Meals not included, baggage may cost extra",
-      "Terminal 2 shuttle from T1 takes ~10 min — don't forget this!",
+      { text: "Terminal 2 has NO lounge — if we want lounge access, use KIX NODOKA (Aeroplaza 2F, 24 hrs, accepts Priority Pass + credit cards) before taking the free T2 shuttle (~10 min)", links: [{ text: "KIX Lounge Info", url: "https://www.kansai-airport.or.jp/en/service/business/03.html" }] },
       "ICOCA cards work in Sapporo on JR trains and subways, but we can't reload them at Sapporo subway stations — reload at JR stations, konbini, or 7-Bank ATMs instead",
       { text: "Peach charges ¥1,500–4,500 per checked bag — book baggage online before the flight (cheaper than at the airport). Carry-on limited to 10kg total (bag + personal item combined)", links: [{ text: "Peach Baggage Fees", url: "https://www.flypeach.com/en/lm/fares/fees_and_charges" }] },
     ],
