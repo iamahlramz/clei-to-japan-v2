@@ -15,9 +15,24 @@ export default function TransportGuide({ transport, theme }) {
         <span className="transport-title">{transport.title}</span>
       </div>
       <ol className="transport-steps">
-        {transport.steps.map((step, i) => (
-          <li key={i} className="transport-step">{step}</li>
-        ))}
+        {transport.steps.map((step, i) => {
+          const text = typeof step === 'string' ? step : step.text;
+          const links = typeof step === 'string' ? null : step.links;
+          return (
+            <li key={i} className="transport-step">
+              {text}
+              {links && (
+                <span className="item-links">
+                  {links.map((link, li) => (
+                    <a key={li} href={link.url} target="_blank" rel="noopener noreferrer" className="item-link">
+                      {link.text} ↗
+                    </a>
+                  ))}
+                </span>
+              )}
+            </li>
+          );
+        })}
       </ol>
     </div>
   );

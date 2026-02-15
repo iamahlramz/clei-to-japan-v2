@@ -15,6 +15,15 @@ export default function TimelineItem({ item, isLast }) {
               <span className="timeline-time" style={{ color }}>{item.time}</span>
             )}
             <p className="timeline-text">{item.text}</p>
+            {item.links && (
+              <span className="item-links">
+                {item.links.map((link, li) => (
+                  <a key={li} href={link.url} target="_blank" rel="noopener noreferrer" className="item-link">
+                    {link.text} ↗
+                  </a>
+                ))}
+              </span>
+            )}
           </div>
         </div>
         {item.food && (

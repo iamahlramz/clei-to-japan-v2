@@ -33,7 +33,7 @@ export const DAYS = [
     tips: [
       "We'll be tired from travel — keep the first evening simple and just enjoy Dotonbori's atmosphere",
       "Hanazono-cho to Namba is just 2 stops on the Yotsubashi Line (~4 min, ¥190)",
-      "Hanazono-cho is near Shinsekai — we can walk to Tsutenkaku Tower area in ~10 min",
+      { text: "Hanazono-cho is near Shinsekai — we can walk to Tsutenkaku Tower area in ~10 min. Nearby hidden gem: Tennoji Park has Ten-Shiba, a family-friendly lawn area with cafés and a playground", links: [{ text: "Ten-Shiba", url: "https://www.google.com/maps/search/Ten-Shiba+Tennoji+Osaka+Japan" }] },
     ],
   },
   {
@@ -49,7 +49,7 @@ export const DAYS = [
         "Osaka Castle → Shinsaibashi: Chuo Line/Tanimachi Line to Shinsaibashi or walk via Nagahoribashi (~25 min subway)",
         "Shinsaibashi → Dotonbori/Namba: Walk south along the arcade (~10 min stroll)",
         "Namba → Hanazono-cho: Yotsubashi Line, 2 stops (~4 min, ¥190)",
-        "Consider: Osaka Amazing Pass (1-day ¥3,500/adult) — unlimited subway + free entry to Osaka Castle and 40+ attractions"
+        { text: "Consider: Osaka Amazing Pass (1-day ¥3,500/adult) — unlimited subway + free entry to Osaka Castle and 40+ attractions. Digital pass — no pickup needed", links: [{ text: "Buy on Klook", url: "https://www.klook.com/en-US/activity/82312-amazing-pass-osaka/" }, { text: "Official Site", url: "https://osaka-amazing-pass.com/en/" }] }
       ]
     },
     items: [
@@ -60,7 +60,7 @@ export const DAYS = [
           { name: "Shinsekai area cafés (10-min walk)", desc: "Walk to Shinsekai for a local morning vibe. Small kissaten (retro coffee shops) serve toast sets and coffee for ~¥500", vibe: "Local, atmospheric" },
         ]
       },
-      { time: "9:30 AM", text: "Osaka Castle Park — explore the grounds amid early cherry blossoms. Wide paths for the stroller, open lawns for Clei to run. Castle tower entry: ¥1,200/adult, free for junior high & younger", icon: "🏯", type: "see" },
+      { time: "9:30 AM", text: "Osaka Castle Park — explore the grounds amid early cherry blossoms. Wide paths for the stroller, open lawns for Clei to run. Castle tower entry: ¥1,200/adult, free for junior high & younger", icon: "🏯", type: "see", links: [{ text: "Skip-the-Line Tickets", url: "https://www.klook.com/en-US/activity/30110-osaka-castle-ticket/" }, { text: "Official Site", url: "https://www.osakacastle.net/english/" }] },
       { time: "10:30 AM", text: "Nishinomaru Garden (¥200, or ¥350 during evening illumination) — best sakura spot with ~300 cherry trees framing the castle. Perfect for photos", icon: "🌸", type: "see" },
       { time: "12:00 PM", text: "Lunch near Osaka Castle / en route to Shinsaibashi", icon: "🍱", type: "food",
         food: [
@@ -83,7 +83,7 @@ export const DAYS = [
       },
     ],
     tips: [
-      "Osaka Amazing Pass (1-day ¥3,500) pays for itself with free castle entry + unlimited subway",
+      { text: "Osaka Amazing Pass (1-day ¥3,500) pays for itself with free castle entry + unlimited subway. Buy digital version on Klook — no pickup needed", links: [{ text: "Buy on Klook", url: "https://www.klook.com/en-US/activity/82312-amazing-pass-osaka/" }] },
       "Don Quijote is open until late (usually midnight+) — can always return after dinner",
       "Everything today flows south along one corridor — no backtracking",
       "Late March in Osaka is early bloom season — we might catch 30-70% cherry blossoms. Still beautiful! Nishinomaru Garden is our best spot for photos",
@@ -115,7 +115,7 @@ export const DAYS = [
         ]
       },
       { time: "9:30 AM", text: "Nara Park — buy shika senbei (deer crackers, ¥200) and feed the bowing deer! Gentle but enthusiastic", icon: "🦌", type: "see" },
-      { time: "10:30 AM", text: "Todai-ji Temple — Japan's largest bronze Buddha (15m!). The pillar with a nostril-sized hole is fun for kids to crawl through. Entry: ¥600/adult, ¥300/child", icon: "🛕", type: "see" },
+      { time: "10:30 AM", text: "Todai-ji Temple — Japan's largest bronze Buddha (15m!). The pillar with a nostril-sized hole is fun for kids to crawl through. Entry: ¥800/adult, ¥400/child (ages 6–12), free under 6", icon: "🛕", type: "see", links: [{ text: "Todai-ji Info", url: "https://www.todaiji.or.jp/en/information/haikan/" }] },
       { time: "12:00 PM", text: "Lunch in Nara", icon: "🍡", type: "food",
         food: [
           { name: "Nakatanidou (Higashimuki Street)", desc: "Famous for live mochi pounding — watch the incredible speed! Fresh mochi is ¥150 per piece. The yomogi (mugwort) flavor is the signature. A must-see performance even if you don't eat it", vibe: "Street food, spectacle", pick: true, mapLink: "https://www.google.com/maps/search/Nakatanidou+Nara+Japan" },
@@ -124,7 +124,7 @@ export const DAYS = [
           { name: "Higashimuki Shopping Street stalls", desc: "The covered arcade near the station has various food options — udon shops, karaage (fried chicken) stands, soft-serve ice cream, and souvenir snacks", vibe: "Varied, walkable" },
         ]
       },
-      { time: "1:00 PM", text: "Kasuga Grand Shrine — mystical path through forest lined with thousands of stone lanterns", icon: "⛩️", type: "see" },
+      { time: "1:00 PM", text: "Kasuga Grand Shrine — mystical path through forest lined with thousands of stone lanterns. Nearby: Isuien Garden (¥1,200) — stunning traditional Japanese garden with views of Todai-ji", icon: "⛩️", type: "see", links: [{ text: "Kasuga Shrine", url: "https://www.kasugataisha.or.jp/en/" }] },
       { time: "2:30 PM", text: "Train back to Osaka. Rest at Airbnb — recharge Clei before evening", icon: "🚃", type: "transport" },
       { time: "4:30 PM", text: "Tenjinbashisuji Shopping Street — Japan's longest covered arcade (2.6km). More local, less touristy, independent shops + street food", icon: "🛍️", type: "shop" },
       { time: "6:30 PM", text: "Dinner in Shinsekai (walkable from Airbnb, ~10 min)", icon: "🍢", type: "food",
@@ -138,6 +138,7 @@ export const DAYS = [
     tips: [
       "Bring hand wipes — deer will lick our hands and grab paper items",
       "Nara is very walkable — all major sights within 15 min of Kintetsu station",
+      { text: "Hidden gem: Nara Visitor Centre (free admission) has free calligraphy and origami deer workshops — Clei will love it. Located near Kintetsu-Nara Station", links: [{ text: "Nara Visitor Centre", url: "https://www.visitnara.jp/" }] },
       "Shinsekai is right near our Airbnb — great for easy evening outings",
     ],
   },
@@ -165,7 +166,7 @@ export const DAYS = [
           { name: "Whity Umeda underground mall", desc: "The vast underground network has multiple cafés and morning set options. Komeda's Coffee and Doutor both have branches here", vibe: "Underground, convenient" },
         ]
       },
-      { time: "10:00 AM", text: "Nintendo Osaka at Daimaru Umeda 13F — official Nintendo store with exclusive merch. Grand Front Osaka next door for upscale shops", icon: "🎮", type: "shop" },
+      { time: "10:00 AM", text: "Nintendo Osaka at Daimaru Umeda 13F — official Nintendo store with exclusive merch. Grand Front Osaka next door for upscale shops", icon: "🎮", type: "shop", links: [{ text: "Nintendo Osaka Info", url: "https://www.nintendo.com/jp/officialstore/osaka/index.html" }] },
       { time: "11:30 AM", text: "Hankyu Department Store — Kansai's fashion flagship. Cosmetics, Japanese fashion, and the famous depachika basement food hall", icon: "🏬", type: "shop" },
       { time: "1:00 PM", text: "Lunch in Umeda area", icon: "🍽️", type: "food",
         food: [
@@ -176,7 +177,7 @@ export const DAYS = [
       },
       { time: "2:30 PM", text: "Osaka Station City / Lucua / Lucua 1100 — massive complex with ~600 stores. Mid-range to high-end fashion and souvenirs", icon: "🛍️", type: "shop" },
       { time: "4:30 PM", text: "Last souvenir runs — Japanese snack boxes, beauty products, character goods", icon: "🎁", type: "shop" },
-      { time: "5:30 PM", text: "Umeda Sky Building — floating garden observatory for sunset over Osaka. Stunning farewell views. Entry: ¥2,000/adult, ¥500 for ages 4-12", icon: "🌅", type: "see" },
+      { time: "5:30 PM", text: "Umeda Sky Building — floating garden observatory for sunset over Osaka. Stunning farewell views. Entry: ¥2,000/adult, ¥500 for ages 4-12", icon: "🌅", type: "see", links: [{ text: "Book on Klook", url: "https://www.klook.com/en-US/activity/35861-umeda-sky-building-kuchu-teien-observatory-ticket/" }, { text: "Official Site", url: "https://www.skybldg.co.jp/en/" }] },
       { time: "7:00 PM", text: "Farewell Osaka dinner", icon: "🍽️", type: "food",
         food: [
           { name: "Takimi-Koji (Sky Building B1)", desc: "If we didn't eat here for lunch — the retro food alley is perfect for a final Osaka meal. Multiple small restaurants with different specialties. ~¥1,000–3,000", vibe: "Atmospheric, varied", pick: true, mapLink: "https://www.google.com/maps/search/Takimi-Koji+Umeda+Sky+Building+Osaka+Japan" },
@@ -189,8 +190,9 @@ export const DAYS = [
     tips: [
       "Everything today is walkable from Nishi-Umeda station — just one subway ride from Hanazono-cho",
       "Pokémon Café is at Daimaru Shinsaibashi 9F (not Umeda) — needs advance reservation at pokemon-cafe.jp. Nintendo Osaka is at Daimaru Umeda 13F — free to browse",
+      { text: "Hidden gem: Osaka Museum of Housing and Living (near Tenjinbashisuji-Rokuchome Station) — walk through a full-scale Edo-period Osaka streetscape. Kimono rental available. ¥600/adult, free for kids. Great for Clei!", links: [{ text: "Museum Info", url: "https://www.osaka-angenet.jp/konjyakukan/" }] },
       "Pack Sapporo layers in carry-on — it's 5–10°C vs Osaka's 12–18°C",
-      "Check Peach Airlines baggage rules tonight — weigh bags to avoid airport surprises",
+      { text: "Check Peach Airlines baggage rules tonight — weigh bags to avoid airport surprises", links: [{ text: "Peach Baggage Policy", url: "https://www.flypeach.com/en/lm/ai/airports/baggage/checked_in_bag" }] },
     ],
   },
   {
@@ -204,8 +206,8 @@ export const DAYS = [
       steps: [
         "Wake up by ~5:30 AM. Peach departs 8:40 AM — need to be at airport by ~7:00 AM",
         "Option A: Hanazono-cho → Namba (Yotsubashi Line, 4 min) → Nankai Airport Express to Kansai Airport (~45 min, ¥970). First trains start ~5:30 AM. Total ~55 min",
-        "Option B: Book a jumbo taxi/minivan from Airbnb to Kansai Airport (~40 min, ~¥18,000–20,000 — try MK Taxi or Yasake Taxi). Regular taxis only fit 4 passengers, so we'd need two. A jumbo taxi fits all 6 of us + luggage. Split among 5 adults = ~¥3,600–4,000 each",
-        "IMPORTANT: Peach uses Terminal 2 at Kansai Airport — it's separate from Terminal 1. If taking train, we arrive at T1 and need a free shuttle bus to T2 (~10 min). Factor this into our timing!",
+        { text: "Option B: Book a jumbo taxi/minivan from Airbnb to Kansai Airport (~40 min, ~¥18,000–20,000 — try MK Taxi or Yasake Taxi). Regular taxis only fit 4 passengers, so we'd need two. A jumbo taxi fits all 6 of us + luggage. Split among 5 adults = ~¥3,600–4,000 each. Book at least 4 days ahead", links: [{ text: "Book MK Taxi", url: "https://mktaxi-japan.com/osaka/airport-transfer/" }, { text: "Klook Airport Transfer", url: "https://www.klook.com/en-US/activity/3947-kansai-airport-transfer-osaka/" }] },
+        { text: "IMPORTANT: Peach uses Terminal 2 at Kansai Airport — it's separate from Terminal 1. If taking train, we arrive at T1 and need a free shuttle bus to T2 (~10 min). Factor this into our timing!", links: [{ text: "Peach Aviation", url: "https://www.flypeach.com/en/" }] },
         "At New Chitose Airport (Sapporo): JR Rapid Airport train to Sapporo Station (~37 min, ¥1,230). Runs every 15 min"
       ]
     },
@@ -221,7 +223,7 @@ export const DAYS = [
       "Peach = budget airline. Meals not included, baggage may cost extra",
       "Terminal 2 shuttle from T1 takes ~10 min — don't forget this!",
       "ICOCA cards work in Sapporo on JR trains and subways, but we can't reload them at Sapporo subway stations — reload at JR stations, konbini, or 7-Bank ATMs instead",
-      "Peach charges ¥1,500–4,500 per checked bag — book baggage online before the flight (cheaper than at the airport). Carry-on limited to 10kg total (bag + personal item combined)",
+      { text: "Peach charges ¥1,500–4,500 per checked bag — book baggage online before the flight (cheaper than at the airport). Carry-on limited to 10kg total (bag + personal item combined)", links: [{ text: "Peach Baggage Fees", url: "https://www.flypeach.com/en/lm/fares/fees_and_charges" }] },
     ],
   },
   {
@@ -251,13 +253,13 @@ export const DAYS = [
     items: [
       { time: "Morning", text: "Final Sapporo activities + souvenir shopping at JR Sapporo Station", icon: "🛍️", type: "shop" },
       { time: "~12:30 PM", text: "Head to New Chitose Airport", icon: "🚃", type: "transport" },
-      { time: "~1:30 PM", text: "Explore New Chitose Airport — Doraemon Sky Park, Royce Chocolate World, airport onsen", icon: "🍫", type: "see" },
+      { time: "~1:30 PM", text: "Explore New Chitose Airport — Doraemon Sky Park (~¥800), Royce Chocolate World (free!), Steiner Guy Hokkaido ramen street, and even an onsen (Shinchitose Airport Onsen, ~¥1,800)", icon: "🍫", type: "see", links: [{ text: "New Chitose Airport Guide", url: "https://www.new-chitose-airport.jp/en/" }] },
       { time: "4:05 PM", text: "Depart Sapporo → Hong Kong (Greater Bay HB881)", icon: "✈️", type: "flight" },
       { time: "8:35 PM", text: "Arrive Hong Kong — transit at HK airport", icon: "🛬", type: "flight" },
     ],
     tips: [
       "New Chitose Airport is one of Japan's best airports for kids — budget 1–2 hours to enjoy it",
-      "We have a ~5-hour layover at Hong Kong airport (8:35 PM to 1:40 AM). No visa needed for transit. The airport has 24-hour food courts and rest areas. Consider paying for a lounge (~HKD 400–500/person) for Clei to sleep — Plaza Premium Lounge accepts walk-ins",
+      { text: "We have a ~5-hour layover at Hong Kong airport (8:35 PM to 1:40 AM). No visa needed for transit. The airport has 24-hour food courts and rest areas. Consider paying for a lounge (~HKD 400–500/person) for Clei to sleep — Plaza Premium Lounge accepts walk-ins. Book ahead on Klook for a discount", links: [{ text: "Book HK Lounge on Klook", url: "https://www.klook.com/en-HK/activity/5265-international-airport-lounge-hong-kong/" }, { text: "Plaza Premium Lounge", url: "https://www.plazapremiumlounge.com/en-uk/find/china-regions/hong-kong/hong-kong/hong-kong-international-airport" }] },
     ],
   },
   {

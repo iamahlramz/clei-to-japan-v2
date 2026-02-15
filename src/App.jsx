@@ -196,7 +196,18 @@ export default function App() {
         {activePage === "extras" && (
           <>
             <Toggle title="Want to Do Universal Studios Instead?" icon="🎢">
-              <div className="usj-note">{USJ_NOTE}</div>
+              <div className="usj-note">
+                <p>{USJ_NOTE.text}</p>
+                {USJ_NOTE.links && (
+                  <span className="checklist-links">
+                    {USJ_NOTE.links.map((link, li) => (
+                      <a key={li} href={link.url} target="_blank" rel="noopener noreferrer" className="checklist-link">
+                        {link.text} ↗
+                      </a>
+                    ))}
+                  </span>
+                )}
+              </div>
             </Toggle>
 
             <Toggle title="Ideas for Sapporo" icon="❄️" subtitle="Sapporo itinerary c/o Jorell">
@@ -209,6 +220,15 @@ export default function App() {
                         <li key={ii} className="sapporo-item">{item}</li>
                       ))}
                     </ul>
+                    {group.links && (
+                      <span className="checklist-links">
+                        {group.links.map((link, li) => (
+                          <a key={li} href={link.url} target="_blank" rel="noopener noreferrer" className="checklist-link">
+                            {link.text} ↗
+                          </a>
+                        ))}
+                      </span>
+                    )}
                   </div>
                 ))}
               </div>
