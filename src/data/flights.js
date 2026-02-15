@@ -16,18 +16,18 @@ export const FLIGHT_GUIDES = [
     terminal: { name: "NAIA Terminal 2 (North Wing)", note: "Philippine Airlines domestic flights use Terminal 2" },
     groups: [
       {
-        label: "Belmont Hotel Group (3 pax incl. Clei)",
+        label: "Clei Group (3 pax incl. Clei — from Belmont Hotel)",
         steps: [
-          { time: "3:00 AM", text: "Wake up. Final bag check — passport, boarding pass (screenshot or printed), travel docs." },
+          { time: "3:00 AM", text: "Wake up at Belmont Hotel. Final bag check — passport, boarding pass (screenshot or printed), travel docs." },
           { time: "3:15–3:30 AM", text: "Grab or hotel-arranged taxi to NAIA Terminal 2. Distance: ~5 km, travel time ~7–10 min at that hour (no traffic). Grab fare: ~PHP 150–250." },
           { time: "3:30–3:45 AM", text: "Arrive NAIA T2. Entrance security checks ticket/ID before letting us into the terminal." },
         ]
       },
       {
-        label: "Private Vehicle Group (3 adults)",
+        label: "Duda Group (3 adults — driving from Batangas)",
         steps: [
-          { time: "3:30 AM", text: "Leave for NAIA Terminal 2. Target arrival: 4:00 AM." },
-          { time: "~3:45–4:00 AM", text: "Arrive T2. Drop passengers at departure entrance, then head to parking." },
+          { time: "~1:00 AM", text: "Leave Batangas. Drive to NAIA Terminal 2 — roughly 2.5–3 hours via SLEX/Skyway depending on traffic. At this hour, roads should be clear." },
+          { time: "~3:30–4:00 AM", text: "Arrive NAIA T2. Drop passengers at departure entrance, then head to parking." },
           {
             time: "Parking",
             text: "Park N Fly (MIA Road, ~500m from terminal) — covered/indoor, 24hr security, free shuttle to T2. Rate: ~PHP 595/day, 5% off for 7+ days. 8-day total: ~PHP 4,524. Book online ahead — Holy Week dates fill up fast! Alternative: NAIA T2 open-air carpark — PHP 600/day for verified passengers (keep parking ticket + boarding pass to validate on return).",
@@ -213,7 +213,7 @@ export const FLIGHT_GUIDES = [
       { time: "4:10–4:30 AM", text: "Immigration (~15–20 min at this hour). Have passport and customs declaration form ready (fill out on the plane).", icon: "🛂" },
       { time: "4:30–4:45 AM", text: "Baggage claim. Collect all bags.", icon: "🧳" },
       { time: "4:45–5:00 AM", text: "Customs — quick for returning citizens with nothing special to declare.", icon: "🔍" },
-      { time: "~5:00 AM", text: "Exit arrivals. Private vehicle group: head to Park N Fly shuttle or NAIA T2 parking (note: we're at T3 now — drive/Grab to T2 parking ~10 min). Belmont Hotel group: Grab ride home (~PHP 150–300 depending on destination).", icon: "🚗" },
+      { time: "~5:00 AM", text: "Exit arrivals. Duda Group: head to Park N Fly shuttle or NAIA T2 parking (note: we're at T3 now — Grab to T2 parking area ~10 min). Clei Group: Grab ride home (~PHP 150–300 depending on destination).", icon: "🚗" },
     ],
     tips: [
       "Grab is available 24/7 at NAIA T3 (centralized ride-hailing hub). Book via app as soon as we exit — wait times may be longer at 5 AM",
