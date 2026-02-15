@@ -10,6 +10,7 @@ import FlightLeg from "./components/FlightLeg";
 import { SAPPORO, USJ_NOTE } from "./data/sapporo";
 import { CHECKLIST } from "./data/checklist";
 import ChecklistSection from "./components/ChecklistSection";
+import { SHOPPING, SHOPPING_TIPS } from "./data/shopping";
 import "./App.css";
 
 const PAGES = [
@@ -224,6 +225,47 @@ export default function App() {
                     ))}
                   </span>
                 )}
+              </div>
+            </Toggle>
+
+            <Toggle title="Shopping Guide" icon="🛍️" subtitle="Outlets, malls, and where to find them" defaultOpen>
+              <div className="shopping-guide">
+                {SHOPPING.map((region, ri) => (
+                  <div key={ri} className="shopping-region">
+                    <h4 className="shopping-region-title">{region.region}</h4>
+                    {region.spots.map((spot, si) => (
+                      <div key={si} className="shopping-spot">
+                        <div className="shopping-spot-name">{spot.name}</div>
+                        <p className="shopping-spot-desc">{spot.desc}</p>
+                        <div className="shopping-spot-meta">
+                          <span className="shopping-meta-item"><strong>Access:</strong> {spot.access}</span>
+                          <span className="shopping-meta-item"><strong>Hours:</strong> {spot.hours}</span>
+                          <span className="shopping-meta-item"><strong>Time needed:</strong> {spot.timeNeeded}</span>
+                        </div>
+                        <div className="shopping-spot-fit">
+                          <strong>When to go:</strong> {spot.itineraryFit}
+                        </div>
+                        {spot.links && (
+                          <span className="item-links">
+                            {spot.links.map((link, li) => (
+                              <a key={li} href={link.url} target="_blank" rel="noopener noreferrer" className="item-link">
+                                {link.text} ↗
+                              </a>
+                            ))}
+                          </span>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+                <div className="shopping-tips">
+                  <h4 className="shopping-tips-title">Tax-Free & Shopping Tips</h4>
+                  <ul className="shopping-tips-list">
+                    {SHOPPING_TIPS.map((tip, i) => (
+                      <li key={i} className="shopping-tips-item">{tip}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </Toggle>
 

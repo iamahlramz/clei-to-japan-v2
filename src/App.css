@@ -1228,6 +1228,129 @@ body {
   font-weight: bold;
 }
 
+/* ========================================
+   Shopping Guide
+   ======================================== */
+
+.shopping-guide {
+  padding: 8px 20px 16px;
+}
+
+.shopping-region {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.shopping-region:last-child {
+  border-bottom: none;
+}
+
+.shopping-region-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #16A34A;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.shopping-spot {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: var(--radius-sm);
+}
+
+.shopping-spot:last-child {
+  margin-bottom: 0;
+}
+
+.shopping-spot-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.shopping-spot-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.shopping-spot-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+.shopping-meta-item {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.shopping-meta-item strong {
+  color: var(--text-secondary);
+}
+
+.shopping-spot-fit {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--transport-text);
+  background: var(--transport-bg);
+  border: 1px solid var(--transport-border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+}
+
+.shopping-spot-fit strong {
+  color: var(--transport-title);
+}
+
+.shopping-tips {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.shopping-tips-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--tips-label);
+  margin-bottom: 8px;
+}
+
+.shopping-tips-list {
+  list-style: none;
+  padding: 0;
+}
+
+.shopping-tips-item {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--tips-text);
+  margin-bottom: 4px;
+  padding-left: 14px;
+  position: relative;
+}
+
+.shopping-tips-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--tips-bullet);
+  font-weight: bold;
+}
+
+.shopping-tips-item:last-child {
+  margin-bottom: 0;
+}
+
 .day-card-empty {
   padding: 40px 20px;
   text-align: center;
@@ -1334,6 +1457,7 @@ body {
   .tips-banner,
   .checklist,
   .checklist-interactive,
+  .shopping-guide,
   .sapporo-grid,
   .flights-list,
   .flight-leg {

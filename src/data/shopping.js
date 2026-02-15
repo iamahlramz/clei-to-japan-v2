@@ -1,0 +1,132 @@
+export const SHOPPING = [
+  {
+    region: "Osaka — Outlets & Malls",
+    spots: [
+      {
+        name: "Rinku Premium Outlets",
+        desc: "Western Japan's largest outlet mall — 210+ stores including Nike, Adidas, Gucci, Coach, Seiko, Birkenstock. Tax-free shopping available (min ¥5,000/store, show passport). Stroller rentals, nursing rooms, and a 20,000 sqm seaside park.",
+        access: "One stop before KIX on the Nankai line. From Namba: ~36 min on Nankai Airport Express (¥770), then 6-min walk from Rinku-Town Station.",
+        hours: "10:00 AM – 8:00 PM",
+        timeNeeded: "3–4 hours",
+        itineraryFit: "Built into Day 4 (Mar 30) morning. Also works as a stop on arrival day (Day 1) if we land early enough — it's right next to the airport.",
+        links: [{ text: "Official Site", url: "https://www.premiumoutlets.co.jp/en/rinku/" }, { text: "Store Directory", url: "https://www.premiumoutlets.co.jp/en/rinku/shops/" }],
+      },
+      {
+        name: "Namba Parks",
+        desc: "Shopping mall with a stunning 8-level rooftop garden featuring 500 species of plants. Clothing, cosmetics, interior goods, kids' items. Stroller-friendly with rentals (2F) and nursing rooms.",
+        access: "Directly connected to Nankai Namba Station (2F walkway). Right next to our Yotsubashi Line stop.",
+        hours: "11:00 AM – 9:00 PM",
+        timeNeeded: "2–3 hours",
+        itineraryFit: "Easy add to Day 2 (Mar 28) afternoon after Shinsaibashi — walk south from Dotonbori. Or any evening since it's right at Namba.",
+        links: [{ text: "Official Site", url: "https://nambaparks.com/english/" }],
+      },
+      {
+        name: "Kuromon Market",
+        desc: "\"The Kitchen of Osaka\" — 600m covered market with 100+ shops. Fresh seafood, exotic fruits, grilled crab legs, takoyaki, and food souvenirs. Also has Japanese handicrafts and high-quality kitchen knives.",
+        access: "Short walk from Nippombashi Station (Sakaisuji/Sennichimae lines). ~10 min walk from Dotonbori.",
+        hours: "~8:00 AM – 5:00 PM (many shops close Sundays)",
+        timeNeeded: "1–2 hours",
+        itineraryFit: "Best as a morning add-on to Day 2 (Mar 28) before Osaka Castle, or Day 4 if skipping Rinku. Avoid Sunday (Mar 29) — many stalls closed.",
+        links: [{ text: "Market Guide", url: "https://kuromon.com/en/" }],
+      },
+      {
+        name: "LaLaport EXPOCITY",
+        desc: "Massive 300-store complex with Japan's tallest ferris wheel, NIFREL aquarium, and 109 Cinemas (IMAX/4DX). Great mix of shopping and entertainment for families.",
+        access: "Osaka Monorail to Bampaku-kinen-koen Station. From Umeda: ~40 min total (Midosuji Line to Senri-Chuo, transfer to monorail).",
+        hours: "10:00 AM – 8:00 PM (weekends till 9:00 PM)",
+        timeNeeded: "4–6 hours (full day with attractions)",
+        itineraryFit: "Would need a dedicated half-day — could replace Day 3 evening (Tenjinbashisuji) or swap into Day 4 if skipping Rinku. Best for families wanting attractions + shopping in one spot.",
+        links: [{ text: "Official Site", url: "https://mitsui-shopping-park.com/lalaport/expocity/en/" }],
+      },
+    ],
+  },
+  {
+    region: "Osaka — Shopping Streets",
+    spots: [
+      {
+        name: "Shinsaibashi-suji Shopping Arcade",
+        desc: "Osaka's main 600m covered shopping street — 380 years of history. UNIQLO, Daiso, local boutiques, fashion, cosmetics. Leads directly into Dotonbori.",
+        access: "2-min walk from Shinsaibashi Station (Midosuji Line).",
+        hours: "~10:00 AM – 9:00 PM",
+        timeNeeded: "1–3 hours",
+        itineraryFit: "Already in Day 2 (Mar 28) afternoon.",
+      },
+      {
+        name: "Dotonbori / Don Quijote",
+        desc: "Neon-lit canal strip with souvenir shops, Glico Running Man, and the multi-floor Don Quijote discount store (tax-free, open past midnight). Snacks, cosmetics, toys, electronics.",
+        access: "Walk south from Shinsaibashi or east from Namba Station.",
+        hours: "Don Quijote: 24 hours. Most shops: 10:00 AM – late",
+        timeNeeded: "1–2 hours",
+        itineraryFit: "Already in Day 2 (Mar 28) evening. Can revisit any night — Don Quijote is open 24/7.",
+      },
+      {
+        name: "Tenjinbashisuji Shopping Street",
+        desc: "Japan's longest covered arcade (2.6 km, 600+ shops). More local and less touristy than Shinsaibashi. Great street food, clothing, and general goods. Wide paths, stroller-friendly.",
+        access: "One stop from Osaka Station on JR Loop Line (Temma Station). Or Sakaisuji Line subway.",
+        hours: "~10:00 AM – 8:00 PM",
+        timeNeeded: "2–3 hours",
+        itineraryFit: "Already in Day 3 (Mar 29) evening after Nara.",
+      },
+    ],
+  },
+  {
+    region: "Sapporo — Outlets & Malls",
+    spots: [
+      {
+        name: "Mitsui Outlet Park Sapporo Kitahiroshima",
+        desc: "180+ stores in a covered all-weather facility near New Chitose Airport. Spacious walkways, tax-free shopping. Good selection of Japanese and international brands.",
+        access: "~50 min by shuttle bus from JR Sapporo Station. Or ~30 min bus from New Chitose Airport.",
+        hours: "10:00 AM – 8:00 PM",
+        timeNeeded: "3–4 hours",
+        itineraryFit: "Best on the way to the airport on Day 7 (Apr 3) — it's between Sapporo and New Chitose. Take the bus from Sapporo Station, shop for 2–3 hours, then bus to the airport. Or add to a Sapporo day if time allows.",
+        links: [{ text: "Official Site", url: "https://mitsui-shopping-park.com/en/mop/sapporo/" }],
+      },
+      {
+        name: "Stellar Place (JR Sapporo Station)",
+        desc: "220+ shops inside the station building — fashion, cosmetics, accessories, toys, books, dining, and a cinema. Two wings: Center and East. Tax-free at many stores (min ¥5,000).",
+        access: "Inside JR Sapporo Station — can't miss it.",
+        hours: "~10:00 AM – 9:00 PM",
+        timeNeeded: "2–3 hours",
+        itineraryFit: "Easy to fit on arrival (Day 5, Mar 31) while waiting to check in, or on any Sapporo evening.",
+        links: [{ text: "Official Site", url: "https://www.stellarplace.net/" }],
+      },
+      {
+        name: "Daimaru Sapporo (Hoppe Town B1)",
+        desc: "Hokkaido's largest duty-free department store. The basement \"Hoppe Town\" has ~100 shops selling all the famous Hokkaido sweets: Shiroi Koibito, Royce, LeTAO, Rokkatei, Kinotoya, and more. Best single stop for souvenir shopping.",
+        access: "Directly connected to JR Sapporo Station.",
+        hours: "10:00 AM – 8:00 PM",
+        timeNeeded: "1–2 hours",
+        itineraryFit: "Perfect for souvenir runs on any Sapporo day. Hoppe Town alone is worth an hour. Can combine with Stellar Place since they're connected.",
+      },
+    ],
+  },
+  {
+    region: "Sapporo — Shopping Streets",
+    spots: [
+      {
+        name: "Tanukikoji Shopping Arcade",
+        desc: "Hokkaido's oldest shopping street (since 1873) — 1 km covered arcade with 200+ shops. Records, tea houses, miso ramen, soup curry, Don Quijote (24 hrs). Pedestrian-only, stroller-friendly.",
+        access: "10-min walk from Sapporo Station. Or underground passage from Odori/Susukino subway stations (stay dry in rain/snow).",
+        hours: "Varies by shop. Don Quijote: 24 hours",
+        timeNeeded: "1–3 hours",
+        itineraryFit: "Already mentioned in Sapporo suggestions. Easy evening activity — combine with dinner at a ramen or soup curry spot.",
+      },
+      {
+        name: "New Chitose Airport Shopping",
+        desc: "Don't rush to the gate! Airport has Royce' Chocolate World (free factory tour), Hokkaido ramen street, and a massive souvenir zone with every Hokkaido brand. Last chance for tax-free purchases. Also has an onsen (~¥2,600/adult, preschool free).",
+        access: "JR Rapid Airport from Sapporo Station (~37 min, ¥1,230).",
+        hours: "Most shops: 8:00 AM – 8:00 PM",
+        timeNeeded: "1–2 hours",
+        itineraryFit: "Already in Day 7 (Apr 3) — we arrive early to enjoy the airport. Pro tip: souvenir prices here are the same as (or cheaper than) in town.",
+      },
+    ],
+  },
+];
+
+export const SHOPPING_TIPS = [
+  "Tax-free threshold: ¥5,000 minimum at a single store in one day. Show passport at checkout — tax is deducted on the spot",
+  "Keep tax-free purchase receipts — customs may check them at departure (New Chitose Airport has a dedicated counter)",
+  "Don Quijote is the best all-in-one discount store — snacks, cosmetics, electronics, toys, souvenirs. Tax-free and often open 24 hours",
+  "Outlet malls (Rinku, Mitsui Sapporo) offer 25–65% off retail. Combine with tax-free savings for the best deals",
+  "For Hokkaido souvenirs: Daimaru Hoppe Town or New Chitose Airport have the widest selection. Prices are consistent across official shops",
+];

@@ -144,43 +144,43 @@ export const DAYS = [
   },
   {
     date: "Mon, Mar 30",
-    title: "Last Day in Osaka — Shop & Sunset",
+    title: "Rinku Outlets, Umeda & Sunset",
     city: "osaka",
-    badge: "🛍️ Shopping + 🌅 Views",
+    badge: "🛍️ Outlets + 🌅 Views",
     transport: {
-      title: "Getting to Umeda",
+      title: "Getting Around Today",
       icon: "🚃",
       steps: [
-        "Hanazono-cho → Nishi-Umeda: Yotsubashi Line direct, northbound to the terminus (~18 min, ~¥280)",
-        "Nishi-Umeda Station is connected underground to Umeda/Osaka Station area. Follow signs for 'Grand Front Osaka' or 'JR Osaka Station'",
-        "Everything today (Grand Front, Hankyu, Osaka Station City, Sky Building) is walkable within the Umeda area — no more trains needed",
-        "Umeda Sky Building is ~10 min walk northwest from Grand Front",
+        "Morning — Rinku Premium Outlets: Hanazono-cho → Namba (Yotsubashi Line, 4 min) → Nankai Airport Express to Rinku-Town Station (~36 min, ~¥770). Total: ~45 min",
+        "Rinku-Town Station is the stop BEFORE Kansai Airport — exit and walk 6 min to the outlets",
+        "Afternoon — Return to Umeda: Rinku-Town → Namba (Nankai, ~36 min) → transfer to Yotsubashi Line northbound to Nishi-Umeda (~18 min, ~¥280). Total: ~60 min",
+        "Everything in Umeda (Grand Front, Sky Building) is walkable from Nishi-Umeda",
         "Return: Yotsubashi Line from Nishi-Umeda direct to Hanazono-cho (~18 min)"
       ]
     },
     items: [
-      { time: "9:00 AM", text: "Breakfast in Umeda after arriving", icon: "☕", type: "food",
+      { time: "8:30 AM", text: "Breakfast near Airbnb before heading out", icon: "☕", type: "food",
         food: [
-          { name: "Bills Osaka Station", desc: "Australian brunch restaurant — famous for ricotta pancakes, avocado toast, and scrambled eggs. Kid-friendly menu. ~¥1,200–1,800/person. Opens 8:30am", vibe: "Trendy brunch", pick: true, mapLink: "https://www.google.com/maps/search/Bills+Osaka+Station+Umeda+Japan" },
-          { name: "Hankyu Bakery (B1 Hankyu Dept Store)", desc: "The depachika (basement food hall) at Hankyu opens early. Incredible pastries, sandwiches, and Japanese baked goods. Grab and go. ~¥300–600", vibe: "Quick, high-quality", mapLink: "https://www.google.com/maps/search/Hankyu+Department+Store+Umeda+Osaka+Japan" },
-          { name: "Whity Umeda underground mall", desc: "The vast underground network has multiple cafés and morning set options. Komeda's Coffee and Doutor both have branches here", vibe: "Underground, convenient" },
+          { name: "Konbini breakfast", desc: "Grab onigiri, tamago sando, and coffee from the nearest Lawson or FamilyMart. Eat on the train. ~¥300–500/person", vibe: "Quick grab", pick: true },
+          { name: "Komeda's Coffee (Namba area)", desc: "Popular Japanese coffee chain — order a drink and get free thick toast + egg. Kid-friendly, spacious seating", vibe: "Sit-down breakfast", mapLink: "https://www.google.com/maps/search/Komeda+Coffee+Namba+Osaka+Japan" },
         ]
       },
-      { time: "10:00 AM", text: "Nintendo Osaka at Daimaru Umeda 13F — official Nintendo store with exclusive merch. Grand Front Osaka next door for upscale shops", icon: "🎮", type: "shop", links: [{ text: "Nintendo Osaka Info", url: "https://www.nintendo.com/jp/officialstore/osaka/index.html" }] },
-      { time: "11:30 AM", text: "Hankyu Department Store — Kansai's fashion flagship. Cosmetics, Japanese fashion, and the famous depachika basement food hall", icon: "🏬", type: "shop" },
-      { time: "1:00 PM", text: "Lunch in Umeda area", icon: "🍽️", type: "food",
+      { time: "9:30 AM", text: "Train to Rinku-Town Station via Namba (Nankai line, ~45 min total)", icon: "🚃", type: "transport" },
+      { time: "10:00 AM", text: "Rinku Premium Outlets — Western Japan's largest outlet mall with 210+ stores. Nike, Adidas, Gucci, Coach, Seiko, Birkenstock and more. Tax-free for tourists (min ¥5,000/store). Stroller-friendly with rental strollers available (¥100 deposit)", icon: "🛍️", type: "shop", links: [{ text: "Rinku Outlets", url: "https://www.premiumoutlets.co.jp/en/rinku/" }, { text: "Store Directory", url: "https://www.premiumoutlets.co.jp/en/rinku/shops/" }] },
+      { time: "11:30 AM", text: "Optional: Rinku Pleasure Town Seacle — ferris wheel with KIX views (¥700/person, ages 3+) and a seaside park lawn area where Clei can run around", icon: "🎡", type: "see" },
+      { time: "12:00 PM", text: "Lunch at Rinku Outlets (20+ restaurants on-site)", icon: "🍽️", type: "food",
         food: [
-          { name: "Grand Front Osaka food court area", desc: "Multiple cuisines under one roof — sushi, gyoza, pizza, rice bowls. Perfect for a group where everyone wants something different. Each person can pick their own. ~¥800–1,500", vibe: "Food court, group-friendly", pick: true },
-          { name: "Ohatsutenjin-dori Shotengai", desc: "Covered arcade near the station packed with local eateries and izakayas. More authentic feel than the malls. Great for udon, ramen, or set meals. ~¥700–1,200", vibe: "Local arcade, varied" },
-          { name: "Takimi-Koji (Umeda Sky Building B1)", desc: "Retro food street recreating 1920s Osaka in the Sky Building basement. Multiple restaurants — chicken, Chinese, Japanese course meals. ~¥800–3,000. Save this for later if doing Sky Building at sunset", vibe: "Themed, atmospheric", mapLink: "https://www.google.com/maps/search/Takimi-Koji+Umeda+Sky+Building+Osaka+Japan" },
+          { name: "Rinku Outlets food court", desc: "Multiple options — ramen, udon, curry rice, fast food. Convenient since we're already here. ~¥800–1,200/person", vibe: "Food court, convenient", pick: true },
+          { name: "Ganko Sushi (Rinku)", desc: "Conveyor belt sushi — fun and easy for families. Pick plates off the belt or order from a tablet. ~¥1,000–2,000/person", vibe: "Fun, interactive" },
         ]
       },
-      { time: "2:30 PM", text: "Osaka Station City / Lucua / Lucua 1100 — massive complex with ~600 stores. Mid-range to high-end fashion and souvenirs", icon: "🛍️", type: "shop" },
-      { time: "4:30 PM", text: "Last souvenir runs — Japanese snack boxes, beauty products, character goods", icon: "🎁", type: "shop" },
+      { time: "1:00 PM", text: "Train back to Osaka — Nankai to Namba, then Yotsubashi Line to Nishi-Umeda (~60 min total)", icon: "🚃", type: "transport" },
+      { time: "2:30 PM", text: "Nintendo Osaka at Daimaru Umeda 13F — official Nintendo store with exclusive merch", icon: "🎮", type: "shop", links: [{ text: "Nintendo Osaka Info", url: "https://www.nintendo.com/jp/officialstore/osaka/index.html" }] },
+      { time: "3:30 PM", text: "Grand Front Osaka + Lucua — upscale shops and last souvenir runs", icon: "🛍️", type: "shop" },
       { time: "5:30 PM", text: "Umeda Sky Building — floating garden observatory for sunset over Osaka. Stunning farewell views. Entry: ¥2,000/adult, ¥500 for ages 4-12", icon: "🌅", type: "see", links: [{ text: "Book on Klook", url: "https://www.klook.com/en-US/activity/35861-umeda-sky-building-kuchu-teien-observatory-ticket/" }, { text: "Official Site", url: "https://www.skybldg.co.jp/en/" }] },
       { time: "7:00 PM", text: "Farewell Osaka dinner", icon: "🍽️", type: "food",
         food: [
-          { name: "Takimi-Koji (Sky Building B1)", desc: "If we didn't eat here for lunch — the retro food alley is perfect for a final Osaka meal. Multiple small restaurants with different specialties. ~¥1,000–3,000", vibe: "Atmospheric, varied", pick: true, mapLink: "https://www.google.com/maps/search/Takimi-Koji+Umeda+Sky+Building+Osaka+Japan" },
+          { name: "Takimi-Koji (Sky Building B1)", desc: "Retro food alley recreating 1920s Osaka in the Sky Building basement. Multiple small restaurants with different specialties. ~¥1,000–3,000", vibe: "Atmospheric, varied", pick: true, mapLink: "https://www.google.com/maps/search/Takimi-Koji+Umeda+Sky+Building+Osaka+Japan" },
           { name: "Kani Doraku (various Umeda branches)", desc: "Famous crab restaurant chain — full crab course meals. A splurge-worthy farewell dinner. ~¥4,000–8,000/person for courses. Book ahead if possible", vibe: "Special occasion, splurge", mapLink: "https://www.google.com/maps/search/Kani+Doraku+Umeda+Osaka+Japan" },
           { name: "Yakiniku near Umeda", desc: "Japanese BBQ restaurants are scattered around Umeda. Grill our own wagyu beef at the table — fun, interactive, and kids love the cooking. ~¥2,000–5,000/person", vibe: "Interactive, celebration", mapLink: "https://www.google.com/maps/search/Yakiniku+Umeda+Osaka+Japan" },
         ]
@@ -188,9 +188,9 @@ export const DAYS = [
       { time: "9:00 PM", text: "Back to Airbnb. Pack bags — Peach flight at 8:40 AM tomorrow!", icon: "🧳", type: "prep" },
     ],
     tips: [
-      "Everything today is walkable from Nishi-Umeda station — just one subway ride from Hanazono-cho",
+      { text: "Rinku Premium Outlets is one train stop from KIX — perfect for a morning outlet run. Opens 10 AM, closes 8 PM. Tax-free shopping available (show passport, minimum ¥5,000 per store)", links: [{ text: "Rinku Access Guide", url: "https://www.premiumoutlets.co.jp/en/rinku/access/" }] },
+      "Rinku has rental strollers (¥100 deposit), nursing rooms, and a 20,000 sqm seaside park — very family-friendly",
       "Pokémon Café is at Daimaru Shinsaibashi 9F (not Umeda) — needs advance reservation at pokemon-cafe.jp. Nintendo Osaka is at Daimaru Umeda 13F — free to browse",
-      { text: "Hidden gem: Osaka Museum of Housing and Living (near Tenjinbashisuji-Rokuchome Station) — walk through a full-scale Edo-period Osaka streetscape. Kimono rental available. ¥600/adult, free for kids. Great for Clei!", links: [{ text: "Museum Info", url: "https://www.osaka-angenet.jp/konjyakukan/" }] },
       "Pack Sapporo layers in carry-on — it's 5–10°C vs Osaka's 12–18°C",
       { text: "Check Peach Airlines baggage rules tonight — weigh bags to avoid airport surprises", links: [{ text: "Peach Baggage Policy", url: "https://www.flypeach.com/en/lm/ai/airports/baggage/checked_in_bag" }] },
     ],
