@@ -5,8 +5,8 @@ export const SECTIONS = [
     icon: "📋",
     subtitle: "Get these done before March 27",
     content: [
-      { label: "Flights", text: "Confirm all 5 flight bookings. Print or save e-tickets offline. Check Peach MM105 baggage allowance (budget airline — extra bags cost extra)." },
-      { label: "Passport & Visa", text: "Ensure all 6 passports are valid for at least 6 months with 2 blank pages. Filipino citizens need a tourist visa for Japan — apply at the Japan Visa Application Center (VFS Global) in Metro Manila, Cebu, or Davao. Processing takes ~1 week. Bring: passport, photo, birth certificate, ITR or bank statements, flight booking, and hotel/Airbnb confirmation. Apply early!", links: [{ text: "VFS Global Japan Visa", url: "https://visa.vfsglobal.com/phl/en/jpn/" }] },
+      { label: "Flights", text: "Confirm all flight bookings. Print or save e-tickets offline. Check Peach MM105 baggage allowance (budget airline — extra bags cost extra)." },
+      { label: "Passport & Visa", text: "Ensure all passports are valid for at least 6 months with 2 blank pages. Filipino citizens need a tourist visa for Japan — apply at the Japan Visa Application Center (VFS Global) in Metro Manila, Cebu, or Davao. Processing takes ~1 week. Bring: passport, photo, birth certificate, ITR or bank statements, flight booking, and hotel/Airbnb confirmation. Apply early!", links: [{ text: "VFS Global Japan Visa", url: "https://visa.vfsglobal.com/phl/en/jpn/" }] },
       { label: "eSIM / Pocket WiFi", text: "Pre-order an eSIM (Ubigi, Airalo, or Mobal) or reserve a pocket WiFi for pickup at Kansai Airport. Coverage needed Mar 27–Apr 3.", links: [{ text: "Airalo eSIM", url: "https://www.airalo.com/japan" }, { text: "Ubigi eSIM", url: "https://www.ubigi.com/en/japan" }, { text: "Klook eSIM", url: "https://www.klook.com/en-US/activity/109393-japan-esim-high-speed-internet-qr-code-voucher/" }] },
       { label: "ICOCA Card", text: "Can be bought at Kansai Airport upon arrival (¥2,000 = ¥500 deposit + ¥1,500 credit). Works on all trains, subways, buses, and convenience stores in Osaka AND Sapporo. If physical cards are unavailable (occasional chip shortages), ask about a Welcome Suica or PASMO Passport (28-day tourist cards) at the airport. Digital ICOCA on iPhone requires a Japan-region Apple ID, so physical cards are our safest bet.", links: [{ text: "Klook ICOCA Card", url: "https://www.klook.com/en-US/activity/1508-icoca-card-osaka/" }] },
       { label: "Apps to Download", text: "Google Maps (works great for Japan transit), Navitime or Japan Travel (route planners), Google Translate (download Japanese offline pack), Tabelog or Google Maps for restaurant reviews.", links: [{ text: "Google Translate", url: "https://translate.google.com/?sl=en&tl=ja" }, { text: "Navitime for Japan Travel", url: "https://www.navitime.co.jp/inbound/" }] },
@@ -17,7 +17,7 @@ export const SECTIONS = [
       { label: "Packing", text: "Osaka ~12–18°C (light jacket). Sapporo ~5–10°C (warm coat, layers). Rain gear. Comfy walking shoes for everyone. For Clei: stroller if needed, snacks, tablet for flights, favorite toy." },
       { label: "Traveling with Clei", text: "Kids under 6 ride trains and subways for FREE in Japan — no ticket needed! Strollers are welcome but fold up during rush hour (8-9 AM, 5-7 PM). Most stations have elevators (look for wheelchair signs). Keep konbini snacks stocked at all times. Build in rest breaks every 2-3 hours." },
       { label: "Airport Lounge Access", text: "Check our credit cards for Priority Pass, LoungeKey, or Mastercard Travel Pass perks before the trip. NAIA T3: PAGSS lounge is under renovation and no longer accepts credit card access (as of 2025). Kansai Airport: Peach departs from Terminal 2, which has NO lounge — use KIX NODOKA Lounge (Aeroplaza 2F, 24 hrs, accepts Priority Pass + credit cards) at Terminal 1 before taking the T2 shuttle. Hong Kong: Plaza Premium Lounge accepts walk-ins, Priority Pass, and LoungeKey — book on Klook for a discount (~HKD 360/3hrs). New Chitose: No traditional lounge, but has an airport onsen (~¥1,800) for relaxing before the flight.", links: [{ text: "KIX NODOKA Lounge", url: "https://www.kansai-airport.or.jp/en/service/business/03.html" }, { text: "Book HK Lounge on Klook", url: "https://www.klook.com/en-HK/activity/5265-international-airport-lounge-hong-kong/" }, { text: "Priority Pass Lounges", url: "https://www.prioritypass.com/airport-lounges" }] },
-      { label: "Travel Insurance", text: "Recommended for a group of 6 including Clei. Cover medical, flight delays, and lost luggage.", links: [{ text: "Klook Travel Insurance", url: "https://www.klook.com/en-US/insurance/" }, { text: "SafetyWing", url: "https://safetywing.com/" }] },
+      { label: "Travel Insurance", text: "Recommended for our group including Clei. Cover medical, flight delays, and lost luggage.", links: [{ text: "Klook Travel Insurance", url: "https://www.klook.com/en-US/insurance/" }, { text: "SafetyWing", url: "https://safetywing.com/" }] },
       { label: "Visit Japan Web", text: "Register before the trip. Enter passport, flight info, and customs declaration for each adult. We'll get a QR code that speeds up immigration and customs. Not mandatory but practically everyone uses it now.", links: [{ text: "Visit Japan Web", url: "https://services.digital.go.jp/visit-japan-web/" }] },
     ]
   },
@@ -27,8 +27,8 @@ export const SECTIONS = [
     icon: "🛬",
     subtitle: "First things first",
     content: [
-      { label: "Immigration", text: "Register on Visit Japan Web before departure — enter passport info, flight details, and customs declaration for each adult. We'll get a QR code to scan at the airport instead of waiting in the paper form line. Saves 20-30 minutes. Do this for all 5 adults at least 3 days before departure.", links: [{ text: "Visit Japan Web", url: "https://services.digital.go.jp/visit-japan-web/" }] },
-      { label: "Buy ICOCA Cards", text: "At JR ticket office (Green Window) or vending machines in the airport station. Buy 6 cards (¥2,000 each = ¥500 deposit + ¥1,500 balance). Top up as needed at any station." },
+      { label: "Immigration", text: "Register on Visit Japan Web before departure — enter passport info, flight details, and customs declaration for each adult. We'll get a QR code to scan at the airport instead of waiting in the paper form line. Saves 20-30 minutes. Do this for all adults at least 3 days before departure.", links: [{ text: "Visit Japan Web", url: "https://services.digital.go.jp/visit-japan-web/" }] },
+      { label: "Buy ICOCA Cards", text: "At JR ticket office (Green Window) or vending machines in the airport station. Buy ICOCA cards for everyone (¥2,000 each = ¥500 deposit + ¥1,500 balance). Top up as needed at any station." },
       { label: "Pocket WiFi Pickup", text: "If pre-ordered, collect at the designated counter in the arrivals hall (usually near the exit gates)." },
       { label: "Currency", text: "ATMs in the airport (7-Bank ATMs in 7-Eleven accept international cards). Withdraw JPY if needed." },
       { label: "Transport to Airbnb", text: "See Day 1 transport guide below. Nankai train to Namba → Yotsubashi Line to Hanazono-cho is the best route." },
@@ -63,12 +63,4 @@ export const SECTIONS = [
       { label: "Travel Insurance", text: "Save our provider's 24/7 claim number in our phones before we leave." },
     ]
   }
-];
-
-export const FLIGHTS = [
-  { date: "Mar 27", route: "Manila → Cebu", code: "PR1851", time: "6:35–8:05 AM" },
-  { date: "Mar 27", route: "Cebu → Osaka", code: "PR410", time: "11:45 AM–5:10 PM" },
-  { date: "Mar 31", route: "Osaka → Sapporo", code: "Peach MM105", time: "8:40–10:40 AM" },
-  { date: "Apr 3", route: "Sapporo → HK", code: "HB881", time: "4:05–8:35 PM" },
-  { date: "Apr 4", route: "HK → Manila", code: "HB231", time: "1:40–3:50 AM" },
 ];

@@ -4,7 +4,9 @@ import DayNav from "./components/DayNav";
 import DayCard from "./components/DayCard";
 import Toggle from "./components/Toggle";
 import { DAYS } from "./data/days";
-import { SECTIONS, FLIGHTS } from "./data/sections";
+import { SECTIONS } from "./data/sections";
+import { FLIGHTS, FLIGHT_GUIDES } from "./data/flights";
+import FlightLeg from "./components/FlightLeg";
 import { SAPPORO, USJ_NOTE } from "./data/sapporo";
 import "./App.css";
 
@@ -144,8 +146,8 @@ export default function App() {
 
         {activePage === "flights" && (
           <div className="flights-page">
-            <h2 className="page-title">Our Flights</h2>
-            <p className="page-subtitle">All 5 flights for the trip</p>
+            <h2 className="page-title">Flight Guide</h2>
+            <p className="page-subtitle">Step-by-step for every flight and connection</p>
             <div className="flights-card">
               <div className="flights-list">
                 {FLIGHTS.map((f, i) => (
@@ -158,6 +160,16 @@ export default function App() {
                 ))}
               </div>
             </div>
+            {FLIGHT_GUIDES.map((guide) => (
+              <Toggle
+                key={guide.id}
+                title={guide.title}
+                icon={guide.icon}
+                subtitle={guide.subtitle}
+              >
+                <FlightLeg guide={guide} />
+              </Toggle>
+            ))}
           </div>
         )}
 

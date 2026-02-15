@@ -12,7 +12,7 @@ export const DAYS = [
         "Option A (Recommended): Nankai Airport Express to Namba (~45 min, ¥970). At Namba, transfer to Osaka Metro Yotsubashi Line → Hanazono-cho (2 stops south, ~4 min, ¥190). Total: ~55 min, ~¥1,160",
         "Option B (Fastest): Nankai Rapi:t Limited Express to Namba (~34 min, ¥1,490). Same transfer at Namba to Yotsubashi Line. Total: ~45 min, ~¥1,680",
         "Option C (Bus): Limousine Bus to Namba OCAT (~50 min, ¥1,100). Walk to Namba Metro station, take Yotsubashi Line south to Hanazono-cho",
-        "Tip for group of 6: With luggage + Clei, the Rapi:t is worth the extra cost — reserved seats, spacious, luggage racks"
+        "Tip for our group: With luggage + Clei, the Rapi:t is worth the extra cost — reserved seats, spacious, luggage racks"
       ]
     },
     items: [
@@ -206,7 +206,7 @@ export const DAYS = [
       steps: [
         "Wake up by ~5:30 AM. Peach departs 8:40 AM — need to be at airport by ~7:00 AM",
         "Option A: Hanazono-cho → Namba (Yotsubashi Line, 4 min) → Nankai Airport Express to Kansai Airport (~45 min, ¥970). First trains start ~5:30 AM. Total ~55 min",
-        { text: "Option B: Book a jumbo taxi/minivan from Airbnb to Kansai Airport (~40 min, ~¥18,000–20,000 — try MK Taxi or Yasake Taxi). Regular taxis only fit 4 passengers, so we'd need two. A jumbo taxi fits all 6 of us + luggage. Split among 5 adults = ~¥3,600–4,000 each. Book at least 4 days ahead", links: [{ text: "Book MK Taxi", url: "https://mktaxi-japan.com/osaka/airport-transfer/" }, { text: "Klook Airport Transfer", url: "https://www.klook.com/en-US/activity/3947-kansai-airport-transfer-osaka/" }] },
+        { text: "Option B: Book a jumbo taxi/minivan from Airbnb to Kansai Airport (~40 min, ~¥18,000–20,000 — try MK Taxi or Yasake Taxi). Regular taxis only fit 4 passengers, so we'd need two. A jumbo taxi fits all of us + luggage. Book at least 4 days ahead", links: [{ text: "Book MK Taxi", url: "https://mktaxi-japan.com/osaka/airport-transfer/" }, { text: "Klook Airport Transfer", url: "https://www.klook.com/en-US/activity/3947-kansai-airport-transfer-osaka/" }] },
         { text: "IMPORTANT: Peach uses Terminal 2 at Kansai Airport — it's separate from Terminal 1. If taking train, we arrive at T1 and need a free shuttle bus to T2 (~10 min). Factor this into our timing!", links: [{ text: "Peach Aviation", url: "https://www.flypeach.com/en/" }] },
         "At New Chitose Airport (Sapporo): JR Rapid Airport train to Sapporo Station (~37 min, ¥1,230). Runs every 15 min"
       ]
@@ -247,13 +247,13 @@ export const DAYS = [
       steps: [
         "JR Rapid Airport from Sapporo Station → New Chitose Airport (~37 min, ¥1,230)",
         "Trains run every 15 min. Aim to arrive at airport by ~2:00 PM for 4:05 PM flight",
-        "Don't rush — New Chitose Airport has Doraemon Sky Park, Royce Chocolate World, and even an onsen (hot spring bath!) to enjoy while waiting"
+        "Don't rush — New Chitose Airport has Royce' Chocolate World (free!), a Hokkaido ramen street, and even an airport onsen (~¥2,600/adult, preschool free) to enjoy while waiting"
       ]
     },
     items: [
       { time: "Morning", text: "Final Sapporo activities + souvenir shopping at JR Sapporo Station", icon: "🛍️", type: "shop" },
       { time: "~12:30 PM", text: "Head to New Chitose Airport", icon: "🚃", type: "transport" },
-      { time: "~1:30 PM", text: "Explore New Chitose Airport — Doraemon Sky Park (~¥800), Royce Chocolate World (free!), Steiner Guy Hokkaido ramen street, and even an onsen (Shinchitose Airport Onsen, ~¥1,800)", icon: "🍫", type: "see", links: [{ text: "New Chitose Airport Guide", url: "https://www.new-chitose-airport.jp/en/" }] },
+      { time: "~1:30 PM", text: "Explore New Chitose Airport — Royce' Chocolate World (free factory tour + bakery!), Hokkaido ramen street, souvenir shopping, and the airport onsen (Shinchitose Airport Onsen, ~¥2,600/adult, preschool free)", icon: "🍫", type: "see", links: [{ text: "New Chitose Airport Guide", url: "https://www.new-chitose-airport.jp/en/" }] },
       { time: "4:05 PM", text: "Depart Sapporo → Hong Kong (Greater Bay HB881)", icon: "✈️", type: "flight" },
       { time: "8:35 PM", text: "Arrive Hong Kong — transit at HK airport", icon: "🛬", type: "flight" },
     ],
