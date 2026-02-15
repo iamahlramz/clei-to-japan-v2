@@ -5,4 +5,4 @@ export const SAPPORO = [
   { cat: "City Sights", items: ["Hokkaido Shrine (Maruyama Park)", "Sapporo Clock Tower", "Tanukikoji Shopping Arcade", "Moerenuma Park (free, but some outdoor facilities may be closed in early April)"] },
 ];
 
-export const USJ_NOTE = "Universal Studios Japan can replace any Osaka day. Monday (Mar 30) is least crowded. Super Nintendo World, Wonderland area for the 5yo. Buy tickets + Express Pass online in advance at usj.co.jp. Express Passes sell out fast — prices vary by date (¥6,800–17,800+).";
+export const USJ_NOTE = "Universal Studios Japan can replace any Osaka day. Monday (Mar 30) is least crowded. Super Nintendo World, Wonderland area for Clei. Buy tickets + Express Pass online in advance at usj.co.jp. Express Passes sell out fast — prices vary by date (¥6,800–17,800+).";

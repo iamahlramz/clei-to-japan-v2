@@ -12,7 +12,7 @@ export const DAYS = [
         "Option A (Recommended): Nankai Airport Express to Namba (~45 min, ¥970). At Namba, transfer to Osaka Metro Yotsubashi Line → Hanazono-cho (2 stops south, ~4 min, ¥190). Total: ~55 min, ~¥1,160",
         "Option B (Fastest): Nankai Rapi:t Limited Express to Namba (~34 min, ¥1,490). Same transfer at Namba to Yotsubashi Line. Total: ~45 min, ~¥1,680",
         "Option C (Bus): Limousine Bus to Namba OCAT (~50 min, ¥1,100). Walk to Namba Metro station, take Yotsubashi Line south to Hanazono-cho",
-        "Tip for group of 6: With luggage + a child, the Rapi:t is worth the extra cost — reserved seats, spacious, luggage racks"
+        "Tip for group of 6: With luggage + Clei, the Rapi:t is worth the extra cost — reserved seats, spacious, luggage racks"
       ]
     },
     items: [
@@ -26,7 +26,7 @@ export const DAYS = [
           { name: "Takoyaki Doraku Wanaka", desc: "Iconic Dotonbori takoyaki — crispy outside, creamy inside. Get the variety box to try 4 flavors. Walk-up stand, cheap and fast. ~¥600", vibe: "Walk & eat", pick: true, mapLink: "https://www.google.com/maps/search/Takoyaki+Doraku+Wanaka+Dotonbori+Osaka+Japan" },
           { name: "Chibo Dotonbori", desc: "Popular okonomiyaki restaurant — cooked on hotplate in front of you. Kids love watching. Try the signature Dotonboriyaki (¥1,300–1,800). Can get crowded after 5pm, go early or expect a short wait.", vibe: "Sit-down, family-friendly", mapLink: "https://www.google.com/maps/search/Chibo+Dotonbori+Osaka+Japan" },
           { name: "Kushikatsu Daruma", desc: "Osaka's most famous kushikatsu chain — deep-fried skewers of meat and vegetables. Fun interactive dining, easy to order. Remember: no double-dipping in the communal sauce! ~¥1,500–2,500/person", vibe: "Fun atmosphere", mapLink: "https://www.google.com/maps/search/Kushikatsu+Daruma+Dotonbori+Osaka+Japan" },
-          { name: "Konbini (7-Eleven, Lawson, FamilyMart)", desc: "Don't underestimate Japan's convenience stores! Great onigiri (rice balls), sandwiches, fried chicken, and desserts. Perfect for the tired child. Open 24/7", vibe: "Quick & cheap" },
+          { name: "Konbini (7-Eleven, Lawson, FamilyMart)", desc: "Don't underestimate Japan's convenience stores! Great onigiri (rice balls), sandwiches, fried chicken, and desserts. Perfect when Clei is tired. Open 24/7", vibe: "Quick & cheap" },
         ]
       },
     ],
@@ -60,7 +60,7 @@ export const DAYS = [
           { name: "Shinsekai area cafés (10-min walk)", desc: "Walk to Shinsekai for a local morning vibe. Small kissaten (retro coffee shops) serve toast sets and coffee for ~¥500", vibe: "Local, atmospheric" },
         ]
       },
-      { time: "9:30 AM", text: "Osaka Castle Park — explore the grounds amid early cherry blossoms. Wide paths for the stroller, open lawns for the 5yo to run. Castle tower entry: ¥1,200/adult, free for junior high & younger", icon: "🏯", type: "see" },
+      { time: "9:30 AM", text: "Osaka Castle Park — explore the grounds amid early cherry blossoms. Wide paths for the stroller, open lawns for Clei to run. Castle tower entry: ¥1,200/adult, free for junior high & younger", icon: "🏯", type: "see" },
       { time: "10:30 AM", text: "Nishinomaru Garden (¥200, or ¥350 during evening illumination) — best sakura spot with ~300 cherry trees framing the castle. Perfect for photos", icon: "🌸", type: "see" },
       { time: "12:00 PM", text: "Lunch near Osaka Castle / en route to Shinsaibashi", icon: "🍱", type: "food",
         food: [
@@ -125,7 +125,7 @@ export const DAYS = [
         ]
       },
       { time: "1:00 PM", text: "Kasuga Grand Shrine — mystical path through forest lined with thousands of stone lanterns", icon: "⛩️", type: "see" },
-      { time: "2:30 PM", text: "Train back to Osaka. Rest at Airbnb — recharge the 5yo before evening", icon: "🚃", type: "transport" },
+      { time: "2:30 PM", text: "Train back to Osaka. Rest at Airbnb — recharge Clei before evening", icon: "🚃", type: "transport" },
       { time: "4:30 PM", text: "Tenjinbashisuji Shopping Street — Japan's longest covered arcade (2.6km). More local, less touristy, independent shops + street food", icon: "🛍️", type: "shop" },
       { time: "6:30 PM", text: "Dinner in Shinsekai (walkable from Airbnb, ~10 min)", icon: "🍢", type: "food",
         food: [
@@ -257,7 +257,7 @@ export const DAYS = [
     ],
     tips: [
       "New Chitose Airport is one of Japan's best airports for kids — budget 1–2 hours to enjoy it",
-      "We have a ~5-hour layover at Hong Kong airport (8:35 PM to 1:40 AM). No visa needed for transit. The airport has 24-hour food courts and rest areas. Consider paying for a lounge (~HKD 400–500/person) for the little one to sleep — Plaza Premium Lounge accepts walk-ins",
+      "We have a ~5-hour layover at Hong Kong airport (8:35 PM to 1:40 AM). No visa needed for transit. The airport has 24-hour food courts and rest areas. Consider paying for a lounge (~HKD 400–500/person) for Clei to sleep — Plaza Premium Lounge accepts walk-ins",
     ],
   },
   {
@@ -269,7 +269,7 @@ export const DAYS = [
       { time: "1:40 AM", text: "Depart Hong Kong → Manila (Greater Bay HB231)", icon: "✈️", type: "flight" },
       { time: "3:50 AM", text: "Arrive Manila — welcome home!", icon: "🏠", type: "flight" },
     ],
-    tips: ["Neck pillow + tablet for the little one on the red-eye"],
+    tips: ["Neck pillow + tablet for Clei on the red-eye"],
   },
 ];
 

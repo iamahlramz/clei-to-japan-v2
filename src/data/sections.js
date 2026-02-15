@@ -14,10 +14,10 @@ export const SECTIONS = [
       { label: "Quick Money Guide", text: "Roughly: ¥100 ≈ PHP 37 (as of early 2025 — rates change!). So ¥1,000 ≈ PHP 370, ¥5,000 ≈ PHP 1,850. A konbini lunch is ~¥500 (PHP 185). A nice restaurant dinner is ~¥2,000–3,000 (PHP 740–1,110). Check xe.com or our bank's rate before departure.", links: [{ text: "Check exchange rate", url: "https://www.xe.com/currencyconverter/convert/?From=JPY&To=PHP" }] },
       { label: "USJ Tickets (if going)", text: "Buy Universal Studios Japan tickets + Express Pass online in advance. They sell out, especially Express Passes.", links: [{ text: "USJ Official Site", url: "https://www.usj.co.jp/" }] },
       { label: "Pokémon Café (Mar 30)", text: "Located at Daimaru Shinsaibashi 9F. Requires advance online reservation — slots open 31 days before at 6 PM JST. Book ASAP.", links: [{ text: "Reserve Pokémon Café", url: "https://www.pokemon-cafe.jp/en/cafe/reservation.html" }] },
-      { label: "Packing", text: "Osaka ~12–18°C (light jacket). Sapporo ~5–10°C (warm coat, layers). Rain gear. Comfy walking shoes for everyone. For the 5yo: stroller if needed, snacks, tablet for flights, favorite toy." },
-      { label: "Traveling with a 5yo", text: "Kids under 6 ride trains and subways for FREE in Japan — no ticket needed! Strollers are welcome but fold up during rush hour (8-9 AM, 5-7 PM). Most stations have elevators (look for wheelchair signs). Keep konbini snacks stocked at all times. Build in rest breaks every 2-3 hours." },
-      { label: "Travel Insurance", text: "Recommended for a group of 6 including a child. Cover medical, flight delays, and lost luggage." },
-      { label: "Visit Japan Web", text: "Register before the trip. Enter passport, flight info, and customs declaration for each adult. We'll get a QR code that speeds up immigration and customs. Not mandatory but practically everyone uses it now.", links: [{ text: "Visit Japan Web", url: "https://vjw.digital.go.jp" }] },
+      { label: "Packing", text: "Osaka ~12–18°C (light jacket). Sapporo ~5–10°C (warm coat, layers). Rain gear. Comfy walking shoes for everyone. For Clei: stroller if needed, snacks, tablet for flights, favorite toy." },
+      { label: "Traveling with Clei", text: "Kids under 6 ride trains and subways for FREE in Japan — no ticket needed! Strollers are welcome but fold up during rush hour (8-9 AM, 5-7 PM). Most stations have elevators (look for wheelchair signs). Keep konbini snacks stocked at all times. Build in rest breaks every 2-3 hours." },
+      { label: "Travel Insurance", text: "Recommended for a group of 6 including Clei. Cover medical, flight delays, and lost luggage." },
+      { label: "Visit Japan Web", text: "Register before the trip. Enter passport, flight info, and customs declaration for each adult. We'll get a QR code that speeds up immigration and customs. Not mandatory but practically everyone uses it now.", links: [{ text: "Visit Japan Web", url: "https://services.digital.go.jp/visit-japan-web/" }] },
     ]
   },
   {
@@ -26,7 +26,7 @@ export const SECTIONS = [
     icon: "🛬",
     subtitle: "First things first",
     content: [
-      { label: "Immigration", text: "Register on Visit Japan Web before departure — enter passport info, flight details, and customs declaration for each adult. We'll get a QR code to scan at the airport instead of waiting in the paper form line. Saves 20-30 minutes. Do this for all 5 adults at least 3 days before departure.", links: [{ text: "Visit Japan Web", url: "https://vjw.digital.go.jp" }] },
+      { label: "Immigration", text: "Register on Visit Japan Web before departure — enter passport info, flight details, and customs declaration for each adult. We'll get a QR code to scan at the airport instead of waiting in the paper form line. Saves 20-30 minutes. Do this for all 5 adults at least 3 days before departure.", links: [{ text: "Visit Japan Web", url: "https://services.digital.go.jp/visit-japan-web/" }] },
       { label: "Buy ICOCA Cards", text: "At JR ticket office (Green Window) or vending machines in the airport station. Buy 6 cards (¥2,000 each = ¥500 deposit + ¥1,500 balance). Top up as needed at any station." },
       { label: "Pocket WiFi Pickup", text: "If pre-ordered, collect at the designated counter in the arrivals hall (usually near the exit gates)." },
       { label: "Currency", text: "ATMs in the airport (7-Bank ATMs in 7-Eleven accept international cards). Withdraw JPY if needed." },
