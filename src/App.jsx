@@ -8,6 +8,8 @@ import { SECTIONS } from "./data/sections";
 import { FLIGHTS, FLIGHT_GUIDES } from "./data/flights";
 import FlightLeg from "./components/FlightLeg";
 import { SAPPORO, USJ_NOTE } from "./data/sapporo";
+import { CHECKLIST } from "./data/checklist";
+import ChecklistSection from "./components/ChecklistSection";
 import "./App.css";
 
 const PAGES = [
@@ -114,6 +116,9 @@ export default function App() {
 
         {activePage === "prep" && (
           <>
+            <Toggle title="Trip Checklist" icon="✅" subtitle="Tap to check off as you go" defaultOpen>
+              <ChecklistSection phases={CHECKLIST} />
+            </Toggle>
             {prepSections.map((section) => (
               <Toggle
                 key={section.id}
