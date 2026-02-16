@@ -1229,6 +1229,200 @@ body {
 }
 
 /* ========================================
+   Airbnb Options
+   ======================================== */
+
+.airbnb-section {
+  padding: 12px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.airbnb-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.airbnb-card-gallery {
+  position: relative;
+  background: #1E293B;
+}
+
+.airbnb-card-images {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.airbnb-card-images::-webkit-scrollbar {
+  display: none;
+}
+
+.airbnb-card-img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+
+.airbnb-gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  color: #1E293B;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.15s;
+  z-index: 2;
+  line-height: 1;
+  padding: 0 0 2px 0;
+}
+
+.airbnb-gallery-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.airbnb-gallery-prev {
+  left: 8px;
+}
+
+.airbnb-gallery-next {
+  right: 8px;
+}
+
+.airbnb-gallery-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  z-index: 2;
+}
+
+.airbnb-gallery-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.15s;
+}
+
+.airbnb-gallery-dot.active {
+  background: #FFFFFF;
+}
+
+.airbnb-card-body {
+  padding: 14px 16px;
+}
+
+.airbnb-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.airbnb-card-option {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--surface);
+  background: #6366F1;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.airbnb-card-rating {
+  font-size: 12px;
+  font-weight: 700;
+  color: #D97706;
+}
+
+.airbnb-card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.airbnb-card-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.airbnb-card-location {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.airbnb-card-guests {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.airbnb-card-highlights {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.airbnb-card-highlights li {
+  font-size: 11px;
+  font-weight: 600;
+  color: #15803D;
+  background: #F0FDF4;
+  border: 1px solid #DCFCE7;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.airbnb-card-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #E11D48;
+  text-decoration: none;
+  background: #FFF1F2;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #FECDD3;
+  transition: background 0.15s, color 0.15s;
+}
+
+.airbnb-card-link:hover {
+  background: #FFE4E6;
+  color: #BE123C;
+}
+
+/* ========================================
    Shopping Guide
    ======================================== */
 
@@ -1457,6 +1651,7 @@ body {
   .tips-banner,
   .checklist,
   .checklist-interactive,
+  .airbnb-section,
   .shopping-guide,
   .sapporo-grid,
   .flights-list,

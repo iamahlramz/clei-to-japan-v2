@@ -11,6 +11,8 @@ import { SAPPORO, USJ_NOTE } from "./data/sapporo";
 import { CHECKLIST } from "./data/checklist";
 import ChecklistSection from "./components/ChecklistSection";
 import { SHOPPING, SHOPPING_TIPS } from "./data/shopping";
+import { AIRBNB_OPTIONS } from "./data/airbnb";
+import AirbnbCard from "./components/AirbnbCard";
 import "./App.css";
 
 const PAGES = [
@@ -119,6 +121,13 @@ export default function App() {
           <>
             <Toggle title="Trip Checklist" icon="✅" subtitle="Tap to check off as you go" defaultOpen>
               <ChecklistSection phases={CHECKLIST} />
+            </Toggle>
+            <Toggle title="Airbnb Options" icon="🏠" subtitle="Osaka stays — Mar 27–31 (4 nights, 5 adults + Clei)">
+              <div className="airbnb-section">
+                {AIRBNB_OPTIONS.map((option) => (
+                  <AirbnbCard key={option.id} option={option} />
+                ))}
+              </div>
             </Toggle>
             {prepSections.map((section) => (
               <Toggle
