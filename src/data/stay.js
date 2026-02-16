@@ -10,6 +10,7 @@ export const STAY = {
   checkIn: "Mar 27 (Fri) — evening arrival after flights",
   checkOut: "Mar 31 (Mon) — early morning (Peach 8:40 AM flight to Sapporo)",
   url: "https://www.airbnb.com/rooms/46971246?check_in=2026-03-27&check_out=2026-03-31&guests=1&adults=5&children=1",
+  mapUrl: "https://www.google.com/maps/place/Finest/@34.6688607,135.4704632,13z/data=!4m9!3m8!1s0x6000ddeaeffe5893:0xb96f8fa27fe928aa!5m2!4m1!1i2!8m2!3d34.6415147!4d135.4949873!16s%2Fg%2F11n05fp_ll",
   images: [
     "043fa669-7b34-49cc-ac86-19ccd682de72.avif",
     "23d3d493-debe-4afb-9baf-fe8e648ab2b3.avif",

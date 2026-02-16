@@ -148,14 +148,24 @@ export default function App() {
                 <p className="stay-hero-subtitle">{STAY.subtitle}</p>
                 <p className="stay-hero-location">{STAY.location}</p>
                 <p className="stay-hero-station">{STAY.station}</p>
-                <a
-                  href={STAY.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="stay-hero-link"
-                >
-                  View on Airbnb ↗
-                </a>
+                <div className="stay-hero-actions">
+                  <a
+                    href={STAY.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="stay-hero-link"
+                  >
+                    View on Airbnb ↗
+                  </a>
+                  <a
+                    href={STAY.mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="stay-hero-link stay-hero-link-map"
+                  >
+                    Open in Maps ↗
+                  </a>
+                </div>
               </div>
             </div>
 

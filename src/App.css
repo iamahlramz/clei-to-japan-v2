@@ -1689,6 +1689,12 @@ body {
   margin-bottom: var(--space-4);
 }
 
+.stay-hero-actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
 .stay-hero-link {
   display: inline-block;
   background: #FF385C;
@@ -1703,6 +1709,11 @@ body {
 
 .stay-hero-link:hover {
   opacity: 0.9;
+}
+
+.stay-hero-link-map {
+  background: var(--transport-bg);
+  color: var(--transport-title);
 }
 
 /* Why We Chose It */
