@@ -90,16 +90,35 @@ export const STAY = {
   ],
 
   checkInOut: [
-    { label: "Check-in", value: "Mar 27 evening (after ~6:30 PM arrival)", icon: "🔑" },
+    { label: "Check-in", value: "From 4:00 PM (we arrive ~6:30 PM — no issue)", icon: "🔑" },
     { label: "Check-out", value: "Mar 31 by ~5:30 AM (early Peach flight)", icon: "🧳" },
-    { label: "Self check-in", value: "Smart lock / lockbox (details from host before trip)", icon: "🔐" },
-    { label: "Luggage storage", value: "Leave bags at Airbnb during Osaka days — take only what you need each day", icon: "👜" },
+    { label: "Self check-in", value: "Check-in guide sent automatically day before stay. Late night OK (self check-in), but be quiet for neighbors", icon: "🔐" },
+    { label: "Luggage drop", value: "Can drop luggage from 12:00 noon (don't spread out). Full room access after 4:00 PM or when cleaning is done", icon: "👜" },
   ],
 
   importantNotes: [
     "Check-out on Mar 31 is VERY early (~5:30 AM) for the Peach 8:40 AM flight to Sapporo. Pack bags the night before!",
     "The Yotsubashi Line first train from Hanazono-cho runs ~5:30 AM — cutting it tight. Consider booking a jumbo taxi (~¥18,000–20,000) to KIX if the group prefers comfort over cost",
+    "Passport info must be submitted online BEFORE check-in — it's a legal requirement for all foreign guests. No on-site staff to do this",
+    "No luggage storage after check-out. Use coin lockers at the station if needed",
+    "Only registered guests allowed inside — no visitors, even if not staying overnight",
     "Download the LINE app before the trip — most Airbnb hosts in Japan communicate via LINE, not SMS",
-    "The area is residential and safe — great for walking at any hour",
   ],
+
+  faq: [
+    { q: "What time is check-in?", a: "Check-in is from 4:00 PM onward." },
+    { q: "Can I check in early or store luggage?", a: "Luggage can be stored inside the room after 12:00 noon — please don't spread out. If cleaning is done, you may use the room. If not, drop luggage and come back after 4:00 PM." },
+    { q: "Can I check in late at night?", a: "Yes — it's self check-in, so you can enter even late at night. However, support may be limited during nighttime. Please be considerate of neighbors." },
+    { q: "How do I check in?", a: "The check-in guide (instructions on how to enter the room) will be automatically sent by the day before your stay." },
+    { q: "Do I need to submit my passport info?", a: "Yes — this is required online BEFORE check-in. It's a legal requirement for all foreign guests, no exceptions. No staff on-site to handle this." },
+    { q: "Can I request a late check-out?", a: "Late check-out is available up to 12:00 PM (¥1,000/30 min). Contact host 3 days before check-out. Unauthorized late check-out: ¥5,000 per 15 min." },
+    { q: "Can I store luggage after check-out?", a: "No luggage storage after check-out. Use coin lockers at nearby stations." },
+    { q: "Can I send luggage in advance?", a: "No — this is a no-staff facility with no advance baggage pickup service." },
+    { q: "What do I need to do at check-out?", a: "Return the key to its original place and make sure you don't leave any belongings behind." },
+    { q: "Can I invite friends over?", a: "No — entry by anyone other than registered guests is not allowed." },
+    { q: "Can I change the number of guests?", a: "Notify host at least 1 week before arrival to ensure correct amenities and towels. Cancellation policy may apply." },
+    { q: "Can guests be substituted mid-stay?", a: "Yes, as long as total guest count doesn't increase. Submit info for all guests including substitutes." },
+  ],
+
+  faqPdf: "airbnb-faq.pdf",
 };

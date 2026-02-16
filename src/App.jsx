@@ -257,6 +257,31 @@ export default function App() {
               </ul>
             </Toggle>
 
+            <Toggle title="Host FAQ" icon="❓" subtitle="Common questions answered by the host">
+              <div className="stay-faq">
+                {STAY.faq.map((item, i) => (
+                  <div key={i} className="stay-faq-item">
+                    <div className="stay-faq-q">
+                      <span className="stay-faq-badge">Q</span>
+                      <span>{item.q}</span>
+                    </div>
+                    <div className="stay-faq-a">
+                      <span className="stay-faq-badge stay-faq-badge-a">A</span>
+                      <span>{item.a}</span>
+                    </div>
+                  </div>
+                ))}
+                <a
+                  href={`${BASE}${STAY.faqPdf}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="stay-faq-pdf-link"
+                >
+                  View original FAQ (PDF) ↗
+                </a>
+              </div>
+            </Toggle>
+
             <Toggle title="Other Options We Considered" icon="🏘️" subtitle="6 Airbnb listings we compared">
               <div className="airbnb-section">
                 {AIRBNB_OPTIONS.map((option) => (
