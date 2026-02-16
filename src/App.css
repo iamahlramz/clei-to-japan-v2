@@ -1602,6 +1602,361 @@ body {
 }
 
 /* ========================================
+   Stay Page
+   ======================================== */
+
+.stay-page .page-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.stay-page .page-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: var(--space-6);
+}
+
+/* Hero Card */
+.stay-hero-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: var(--space-5);
+  box-shadow: var(--shadow-md);
+}
+
+.stay-gallery {
+  position: relative;
+}
+
+.stay-gallery-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.stay-gallery-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.stay-gallery-img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.stay-hero-body {
+  padding: var(--space-5);
+}
+
+.stay-hero-rating {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.stay-hero-name {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: var(--space-1);
+}
+
+.stay-hero-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.stay-hero-location {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.stay-hero-station {
+  font-size: 13px;
+  color: var(--transport-text);
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+}
+
+.stay-hero-link {
+  display: inline-block;
+  background: #FF385C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.stay-hero-link:hover {
+  opacity: 0.9;
+}
+
+/* Why We Chose It */
+.stay-reasons {
+  padding: var(--space-4) var(--space-5);
+  list-style: none;
+}
+
+.stay-reason {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 20px;
+  position: relative;
+}
+
+.stay-reason::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #16A34A;
+  font-weight: 700;
+}
+
+.stay-reason:last-child {
+  border-bottom: none;
+}
+
+/* Check-in/Check-out Details */
+.stay-details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+}
+
+.stay-detail-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  background: var(--bg);
+  padding: var(--space-4);
+  border-radius: var(--radius-sm);
+}
+
+.stay-detail-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.stay-detail-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.stay-detail-value {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Important Notes */
+.stay-notes {
+  padding: 0 var(--space-5) var(--space-4);
+}
+
+.stay-note {
+  background: var(--tips-bg);
+  border-left: 3px solid var(--tips-border);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 13px;
+  color: var(--tips-text);
+  line-height: 1.5;
+  margin-bottom: var(--space-2);
+}
+
+.stay-note:last-child {
+  margin-bottom: 0;
+}
+
+/* Directions */
+.stay-directions {
+  padding: var(--space-4) var(--space-5);
+}
+
+.stay-direction-step {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  align-items: flex-start;
+}
+
+.stay-step-num {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--transport-bg);
+  color: var(--transport-title);
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.stay-step-text {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 3px;
+}
+
+.stay-direction-tip {
+  margin-top: var(--space-3);
+  background: var(--tips-bg);
+  border-left: 3px solid var(--tips-border);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 13px;
+  color: var(--tips-text);
+  line-height: 1.5;
+}
+
+/* Quick Routes */
+.stay-routes {
+  padding: var(--space-4) var(--space-5);
+}
+
+.stay-route {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.stay-route:last-child {
+  border-bottom: none;
+}
+
+.stay-route-dest {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.stay-route-detail {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.stay-route-meta {
+  display: flex;
+  gap: var(--space-4);
+  font-size: 12px;
+  color: var(--transport-text);
+  font-weight: 500;
+}
+
+/* Nearby */
+.stay-nearby {
+  padding: var(--space-4) var(--space-5);
+}
+
+.stay-nearby-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.stay-nearby-item:last-child {
+  border-bottom: none;
+}
+
+.stay-nearby-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+
+.stay-nearby-name {
+  flex: 1;
+  font-size: 14px;
+}
+
+.stay-nearby-dist {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* House Rules */
+.stay-rules {
+  padding: var(--space-4) var(--space-5);
+}
+
+.stay-rule {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border-light);
+  align-items: flex-start;
+}
+
+.stay-rule:last-child {
+  border-bottom: none;
+}
+
+.stay-rule-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+
+.stay-rule-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.stay-rule-detail {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Highlights */
+.stay-highlights {
+  padding: var(--space-4) var(--space-5);
+  list-style: none;
+}
+
+.stay-highlight {
+  padding: var(--space-2) 0;
+  padding-left: 20px;
+  position: relative;
+  font-size: 14px;
+}
+
+.stay-highlight::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--food-accent);
+}
+
+/* ========================================
    Responsive — Tablet+
    ======================================== */
 
@@ -1646,6 +2001,14 @@ body {
     font-size: 26px;
   }
 
+  .stay-gallery-img {
+    height: 320px;
+  }
+
+  .stay-details-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .transport-guide,
   .day-card-timeline,
   .tips-banner,
@@ -1655,7 +2018,15 @@ body {
   .shopping-guide,
   .sapporo-grid,
   .flights-list,
-  .flight-leg {
+  .flight-leg,
+  .stay-reasons,
+  .stay-details-grid,
+  .stay-notes,
+  .stay-directions,
+  .stay-routes,
+  .stay-nearby,
+  .stay-rules,
+  .stay-highlights {
     padding-left: 24px;
     padding-right: 24px;
   }

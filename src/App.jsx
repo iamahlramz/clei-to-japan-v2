@@ -13,10 +13,14 @@ import ChecklistSection from "./components/ChecklistSection";
 import { SHOPPING, SHOPPING_TIPS } from "./data/shopping";
 import { AIRBNB_OPTIONS } from "./data/airbnb";
 import AirbnbCard from "./components/AirbnbCard";
+import { STAY } from "./data/stay";
 import "./App.css";
+
+const BASE = import.meta.env.BASE_URL;
 
 const PAGES = [
   { id: "itinerary", label: "Itinerary", icon: "📅" },
+  { id: "stay", label: "Stay", icon: "🏠" },
   { id: "prep", label: "Prep", icon: "📋" },
   { id: "flights", label: "Flights", icon: "✈️" },
   { id: "info", label: "Info", icon: "🇯🇵" },
@@ -117,17 +121,146 @@ export default function App() {
           </>
         )}
 
-        {activePage === "prep" && (
-          <>
-            <Toggle title="Trip Checklist" icon="✅" subtitle="Tap to check off as you go" defaultOpen>
-              <ChecklistSection phases={CHECKLIST} />
+        {activePage === "stay" && (
+          <div className="stay-page">
+            <h2 className="page-title">Our Osaka Home Base</h2>
+            <p className="page-subtitle">{STAY.name} — {STAY.nights}</p>
+
+            <div className="stay-hero-card">
+              <div className="stay-gallery">
+                <div className="stay-gallery-scroll">
+                  {STAY.images.map((file, i) => (
+                    <img
+                      key={i}
+                      src={`${BASE}airbnb/${STAY.folder}/${file}`}
+                      alt={`${STAY.name} photo ${i + 1}`}
+                      className="stay-gallery-img"
+                      loading="lazy"
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="stay-hero-body">
+                <div className="stay-hero-rating">
+                  ★ {STAY.rating} ({STAY.reviews} reviews) · {STAY.guests} guests max
+                </div>
+                <h3 className="stay-hero-name">{STAY.name}</h3>
+                <p className="stay-hero-subtitle">{STAY.subtitle}</p>
+                <p className="stay-hero-location">{STAY.location}</p>
+                <p className="stay-hero-station">{STAY.station}</p>
+                <a
+                  href={STAY.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="stay-hero-link"
+                >
+                  View on Airbnb ↗
+                </a>
+              </div>
+            </div>
+
+            <Toggle title="Why We Chose This" icon="💡" subtitle="Location, access, and reliability" defaultOpen>
+              <ul className="stay-reasons">
+                {STAY.whyWeChoseIt.map((reason, i) => (
+                  <li key={i} className="stay-reason">{reason}</li>
+                ))}
+              </ul>
             </Toggle>
-            <Toggle title="Airbnb Options" icon="🏠" subtitle="Osaka stays — Mar 27–31 (4 nights, 5 adults + Clei)">
+
+            <Toggle title="Check-in & Check-out" icon="🔑" subtitle="Arrival evening, early morning departure" defaultOpen>
+              <div className="stay-details-grid">
+                {STAY.checkInOut.map((item, i) => (
+                  <div key={i} className="stay-detail-card">
+                    <span className="stay-detail-icon">{item.icon}</span>
+                    <div>
+                      <div className="stay-detail-label">{item.label}</div>
+                      <div className="stay-detail-value">{item.value}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="stay-notes">
+                {STAY.importantNotes.map((note, i) => (
+                  <p key={i} className="stay-note">{note}</p>
+                ))}
+              </div>
+            </Toggle>
+
+            <Toggle title="Getting There from KIX" icon="🚃" subtitle={`${STAY.gettingThere.totalTime}, ${STAY.gettingThere.totalCost}`}>
+              <div className="stay-directions">
+                {STAY.gettingThere.steps.map((s, i) => (
+                  <div key={i} className="stay-direction-step">
+                    <span className="stay-step-num">{s.step}</span>
+                    <span className="stay-step-text">{s.text}</span>
+                  </div>
+                ))}
+                <p className="stay-direction-tip">{STAY.gettingThere.tip}</p>
+              </div>
+            </Toggle>
+
+            <Toggle title="Quick Routes from Home Base" icon="🗺️" subtitle="Getting to key destinations">
+              <div className="stay-routes">
+                {STAY.quickRoutes.map((r, i) => (
+                  <div key={i} className="stay-route">
+                    <div className="stay-route-dest">{r.destination}</div>
+                    <div className="stay-route-detail">{r.route}</div>
+                    <div className="stay-route-meta">
+                      <span>{r.time}</span>
+                      <span>{r.cost}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Toggle>
+
+            <Toggle title="What's Nearby" icon="📍" subtitle="Walking distance essentials">
+              <div className="stay-nearby">
+                {STAY.nearby.map((place, i) => (
+                  <div key={i} className="stay-nearby-item">
+                    <span className="stay-nearby-icon">{place.icon}</span>
+                    <span className="stay-nearby-name">{place.name}</span>
+                    <span className="stay-nearby-dist">{place.distance}</span>
+                  </div>
+                ))}
+              </div>
+            </Toggle>
+
+            <Toggle title="House Rules" icon="📜" subtitle="Please follow these during our stay">
+              <div className="stay-rules">
+                {STAY.houseRules.map((r, i) => (
+                  <div key={i} className="stay-rule">
+                    <span className="stay-rule-icon">{r.icon}</span>
+                    <div>
+                      <div className="stay-rule-title">{r.rule}</div>
+                      <div className="stay-rule-detail">{r.detail}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Toggle>
+
+            <Toggle title="Highlights & Amenities" icon="✨">
+              <ul className="stay-highlights">
+                {STAY.highlights.map((h, i) => (
+                  <li key={i} className="stay-highlight">{h}</li>
+                ))}
+              </ul>
+            </Toggle>
+
+            <Toggle title="Other Options We Considered" icon="🏘️" subtitle="6 Airbnb listings we compared">
               <div className="airbnb-section">
                 {AIRBNB_OPTIONS.map((option) => (
                   <AirbnbCard key={option.id} option={option} />
                 ))}
               </div>
+            </Toggle>
+          </div>
+        )}
+
+        {activePage === "prep" && (
+          <>
+            <Toggle title="Trip Checklist" icon="✅" subtitle="Tap to check off as you go" defaultOpen>
+              <ChecklistSection phases={CHECKLIST} />
             </Toggle>
             {prepSections.map((section) => (
               <Toggle

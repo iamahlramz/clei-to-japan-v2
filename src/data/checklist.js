@@ -13,7 +13,7 @@ export const CHECKLIST = [
       { id: "peach-baggage", text: "Add checked bags to Peach MM105 booking ONLINE (half the price of airport counter)" },
       { id: "park-n-fly", text: "Book Park N Fly parking online (Holy Week fills up fast!)" },
       { id: "belmont-hotel", text: "Book Belmont Hotel for Clei Group (night of Mar 26)" },
-      { id: "osaka-airbnb", text: "Confirm Osaka Airbnb booking — save host's phone + LINE ID" },
+      { id: "osaka-airbnb", text: "Confirm Hanazono-cho Airbnb booking — save host's phone + LINE ID (see Stay tab)" },
       { id: "sapporo-accom", text: "Confirm Sapporo accommodation" },
       { id: "hk-lounge", text: "Book Plaza Premium Lounge at HK airport on Klook (for the 5-hour layover)" },
       { id: "apps-download", text: "Download apps: Google Maps, Google Translate (Japanese offline), Navitime" },
@@ -97,7 +97,7 @@ export const CHECKLIST = [
     icon: "❄️",
     items: [
       { id: "wake-530am", text: "Wake up ~5:30 AM — Peach departs 8:40 AM" },
-      { id: "checkout-airbnb", text: "Final check of Airbnb — nothing left behind" },
+      { id: "checkout-airbnb", text: "Final check of Hanazono-cho Airbnb — nothing left behind, lock up" },
       { id: "train-to-kix", text: "Train to KIX T1 station — arrive by ~6:15 AM" },
       { id: "shuttle-t2", text: "Take free shuttle bus from Aeroplaza 1F to Terminal 2 (~8 min)" },
       { id: "peach-checkin", text: "Check in at Peach kiosks (opens 7:10 AM, CLOSES 8:10 AM SHARP)" },
